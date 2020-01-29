@@ -1,0 +1,291 @@
+div.generatedSpinner {
+  margin: 0 !important;
+  padding: 0 !important; }
+  div.generatedSpinner > div > div {
+    background-color: #333333 !important; }
+
+#editorSettingsTopBar a.layoutIcon {
+  color: #333333 !important;
+  fill: #333333 !important; }
+
+#Wrapper .dudaoneInnerShellWrapper:not(.menuMode) .leftPanelMenuLabel,
+.pagesPanelContainer li.pageItem.currentPage > div.pageItemContainer span.pageName,
+#smartPanelRulesContainer li.ruleItem.currentRule > div.ruleItemContainer span.ruleName,
+.rightPanel .rightPanelTabsWrapper .rightPanelTab.tabSelect,
+.headerEdt .breadcrumb-first,
+.headerEdt .arrow,
+.accountDomainLive .accountDomainExplan,
+#settingsPanel ul li.current a,
+#contentLibraryPanel ul li.current a,
+.pagesPanelContainer li.pageItem.settingsMode > div.pageItemContainer a.settings,
+#smartPanelRulesContainer li.ruleItem.settingsMode > div.ruleItemContainer a.settings,
+#popupPageType h2,
+#popupPageType h4,
+.popupPageHeader > div.popupPageHeaderOn,
+.oneImagePicker .rightPanelTab.tabSelect,
+.rightPanel .rightPanelTabsWrapper .rightPanelTab.tabSelect,
+.rightPanel .rightPanelTabsWrapper .rightPanelTab.tabSelect:hover,
+.oneImagePicker .rightPanelTab:hover,
+body.contentImportWelcome .contentImportWelcomeLeft,
+.oneLinkWrapper .linkPanel .linkPageActions a,
+#siteSettingsInnerPanel .settingsPage a.expandImg,
+#siteSettingsInnerPanel .settingsPage.url .accountDomainLive input.domainValue:not([disabled]),
+#siteSettingsInnerPanel .settingsPage.url #siteLiveUrl,
+.accountDomainLive #domianMoreInfo .blue_text,
+.designSettingHTMLWrapper .warning a,
+.mapTestMapWrapper a,
+#couponLayoutContainer a.couponLayout.active,
+body.contentImportWelcome .dm-icon-duda-arrow,
+#popupPageType .fromSiteSettings .addNotification,
+#siteSettHeaderTextExpnadedWrapper .headTitle,
+.oneImagePicker .slideRightPanelInner .imgPlaceholder .imgPlaceholderEnlargeOption:before,
+#mediapicker .layout-list .mediaSort.dateSort .date,
+#mediapicker .layout-list .mediaSort.sizeSort .size,
+#mediapicker .layout-list .mediaSort.nameSort .name,
+#mediapicker ul.tabs > li > a:hover, #mediapicker ul.tabs > li a:hover .tabIcon:before,
+#mediapicker ul.tabs > li > a.active div, #mediapicker ul.tabs > li > a.active .tabIcon:before,
+#mediapicker .mediaTitle, #mediapicker .contentImportText, #mediapicker .dm-icon-duda-arrow,
+.bgImageCtrls .bgCtrlPosition table .bgCtrlPosButton.active .bgCtrlPosIcon:before,
+.bgImageCtrls .bgCtrlButton.active .bgCtrlName, .bgImageCtrls .bgCtrlButton.active:hover .bgCtrlName,
+.ui-dialog .ui-dialog-title, .alertPopUp .title, #rulesWizardContainer .fixedHeader h1,
+#smartModeTip .smartModeTipTitle, .confirmDeleteTitle, #popupPageType #singlePanelLabel,
+.d1SecondaryLink {
+  color: #333333 !important; }
+
+.popupWinExampleMask .ptBlueBtn,
+#editorSettingsTopBar a.layoutIcon.active,
+.pagesPanelContainer li.pageItem.currentPage > div.pageItemContainer span.grab,
+.pagesPanelContainer li.pageItem.currentPage > div.pageItemContainer span.highlight,
+#smartPanelRulesContainer li.ruleItem.currentRule > div.ruleItemContainer span.grab,
+.widgetEditorTop .slideBtnSelected,
+.GreyBtn.toggleModeOn,
+.GreyBtn.toggleModeOn:hover,
+.headerLogoToggleAddDesign SPAN.toggleModeOn,
+.alignLeftBtn.alignCenterBtnSelect,
+.alignLeftBtn.alignLeftBtnSelect,
+.alignLeftBtn.alignRightBtnSelect,
+.alignCenterBtn.alignCenterBtnSelect,
+.alignCenterBtn.alignLeftBtnSelect,
+.alignCenterBtn.alignRightBtnSelect,
+.alignRightBtn.alignCenterBtnSelect,
+.alignRightBtn.alignLeftBtnSelect,
+.alignRightBtn.alignRightBtnSelect,
+.alignLeftBtn.alignCenterBtnSelect:before,
+.alignLeftBtn.alignLeftBtnSelect:before,
+.alignLeftBtn.alignRightBtnSelect:before,
+.alignCenterBtn.alignCenterBtnSelect:before,
+.alignCenterBtn.alignLeftBtnSelect:before,
+.alignCenterBtn.alignRightBtnSelect:before,
+.alignRightBtn.alignCenterBtnSelect:before,
+.alignRightBtn.alignLeftBtnSelect:before,
+.alignRightBtn.alignRightBtnSelect:before,
+#publishFlow .step.open .number,
+input[type="radio"]:checked + label span:before,
+.pagesPanelContainer li.pageItem.currentPage > div.pageItemContainer:hover span.grab,
+.pagesPanelContainer li.pageItem.currentPage > div.pageItemContainer:hover span.highlight,
+#smartPanelRulesContainer li.ruleItem.currentRule > div.ruleItemContainer:hover span.grab,
+#settingsPanel ul li.current,
+#settingsPanel ul li:hover.current,
+#contentLibraryPanel ul li.current,
+#contentLibraryPanel ul li:hover.current,
+#editorSettingsTopBar a.layoutIcon.active,
+body.cssEditor #editorSettingsTopBar a.layoutIcon.active,
+#editorSettingsTopBar #topBarPreviewTitle,
+.pagesPanelContainer li.pageItem div.pageSettings ul li:not(.disabled):hover,
+.pagesPanelContainer li.pageItem div.pageSettings ul li.active,
+#smartPanelRulesContainer li.ruleItem div.ruleSettings ul li:hover:not([data-action="delete"]),
+#smartPanelRulesContainer li.ruleItem div.ruleSettings ul li.active,
+.neeOnButton.neeOnButtonOne .onOffHandle,
+#_editor .editorTab,
+#popupPageType .actionButton,
+.accountDomainLive .wlSubDomainCopy,
+.oneImagePicker .slideRightPanelInner #oneImgRepeatPositionSetting .posButton.selected,
+#Wrapper .dudaoneInnerShellWrapper:not(.menuMode) .leftPanelMenuLabel,
+#popupPageType .GradientBtnWrapper > div,
+.bgImageCtrls .bgCtrlButton.active .bgCtrlIcon,
+.bgImageCtrls .bgCtrlButton.active:hover .bgCtrlIcon,
+.d1SecondaryBtn {
+  background-color: #333333 !important;
+  color: white !important;
+  fill: white !important; }
+
+#editorSettingsTopBar a.layoutIcon svg {
+  fill: #333333 !important; }
+
+#editorSettingsTopBar a.layoutIcon.active svg {
+  fill: white !important; }
+
+#Wrapper .dudaoneInnerShellWrapper:not(.menuMode) .leftPanelMenuLabel,
+.bgImageCtrls .bgCtrlButton.active .bgCtrlIcon:before, .bgImageCtrls .bgCtrlButton.active:hover .bgCtrlIcon:before {
+  color: white !important; }
+
+#popupPageType .actionButton:hover,
+.oneImagePicker .slideRightPanelInner .imgPlaceholder .imgPlaceholderSelectOption:hover {
+  background-color: #1c1c1c !important; }
+
+.editorDroppableArea.canBeDropped {
+  -webkit-box-shadow: 3px 0px 2px rgba(51, 51, 51, 0.8) !important;
+  -moz-box-shadow: 3px 0px 2px rgba(51, 51, 51, 0.8) !important;
+  box-shadow: 3px 0px 2px rgba(51, 51, 51, 0.8) !important; }
+
+.editorDropHandle.canBeDropped {
+  -webkit-box-shadow: -3px 0px 2px rgba(51, 51, 51, 0.8) !important;
+  -moz-box-shadow: -3px 0px 2px rgba(51, 51, 51, 0.8) !important;
+  box-shadow: -3px 0px 2px rgba(51, 51, 51, 0.8) !important; }
+
+.imgPlaceholder.imgPlaceholderSelected {
+  -webkit-box-shadow: 0px 0px 0px 3px #333333 !important;
+  -moz-box-shadow: 0px 0px 0px 3px #333333 !important;
+  box-shadow: 0px 0px 0px 3px #333333 !important; }
+
+.smallTempPlaceHlderForImage:hover,
+#mediapicker .itemButtons .itemSelector:hover,
+#mediapicker .layout-medium .media-item.selected .itemSelector, #mediapicker .layout-large .media-item.selected .itemSelector {
+  border-color: #e29933 !important; }
+
+#mediapicker .itemButtons .itemSelector:hover,
+#mediapicker .layout-list .media-item.selected,
+#mediapicker .layout-medium .media-item.selected .itemSelector, #mediapicker .layout-large .media-item.selected .itemSelector {
+  background-color: #e29933 !important;
+  color: white !important;
+  fill: white !important; }
+
+#mediapicker .layout-medium .media-item.selected .itemImgWrapper, #mediapicker .layout-large .media-item.selected .itemImgWrapper {
+  -webkit-box-shadow: 0px 0px 0px 2px #e29933;
+  -moz-box-shadow: 0px 0px 0px 1px #e29933;
+  box-shadow: 0px 0px 0px 2px #e29933; }
+
+#mediapicker a.active > div {
+  color: #f66035; }
+#mediapicker ul.tabs li > a.active > div {
+  color: #f66035 !important; }
+#mediapicker .pagination li.active {
+  border: 1px solid #f66035; }
+
+#editorSettingsTopBar div.actionsPanel a.publish,
+.cssTopBarBtn,
+.ptOrangeBtn,
+.orangeBut,
+.popupWinExample .confirmDeleteButtons .blueBtn,
+.bigButtons.ptTipWrapper .ptTipSkip,
+div.buttons div.button.selected > a,
+#smartInnerPanel .button:not(.previewButton):not(.new-image-button):not(.newPopupButton),
+#rulesWizardContainer .wizardStepsWrapper .wizardStep.currentStep .icon,
+#smartInnerPanel .image.selected .itemOverlay .itemSelector, #smartInnerPanel .image:hover .itemOverlay .itemSelector,
+#rulesWizardContainer .footer .next, .doneEditRule, #smartModeTip .smartModeTipBody a.yesBtn {
+  background-color: #e29933 !important;
+  color: white !important; }
+  #editorSettingsTopBar div.actionsPanel a.publish.reverseColors,
+  .cssTopBarBtn.reverseColors,
+  .ptOrangeBtn.reverseColors,
+  .orangeBut.reverseColors,
+  .popupWinExample .confirmDeleteButtons .blueBtn.reverseColors,
+  .bigButtons.ptTipWrapper .ptTipSkip.reverseColors,
+  div.buttons div.button.selected > a.reverseColors,
+  #smartInnerPanel .button:not(.previewButton):not(.new-image-button):not(.newPopupButton).reverseColors,
+  #rulesWizardContainer .wizardStepsWrapper .wizardStep.currentStep .icon.reverseColors,
+  #smartInnerPanel .image.selected .itemOverlay .itemSelector.reverseColors, #smartInnerPanel .image:hover .itemOverlay .itemSelector.reverseColors,
+  #rulesWizardContainer .footer .next.reverseColors, .doneEditRule.reverseColors, #smartModeTip .smartModeTipBody a.yesBtn.reverseColors {
+    background-color: transparent !important;
+    color: #e29933 !important; }
+
+#rulesWizardContainer .wizardStepsWrapper .wizardStep.currentStep .icon, #smartInnerPanel .image .itemOverlay .itemSelector {
+  border-color: #e29933 !important; }
+
+.ptOrangeBtn:hover,
+#editorSettingsTopBar div.actionsPanel a.publish:hover,
+.popupWinExample .confirmDeleteButtons .blueBtn:hover {
+  background-color: #d88b1f !important; }
+
+#publishFlow #domainConnectError .viewYourSite .originalSiteLink,
+#publishFlow #goLiveStepInfo h4 .colored,
+div.buttons div.button.selected > a[data-buttonstyle="CONTRAST_ICON"] span.icon,
+#rulesWizardContainer .header .readable .current-step,
+.fc-header .fc-button.fc-state-active.fc-button-agendaWeek, .fc-header .fc-button.fc-state-active.fc-button-month, .fc-state-highlight .fc-day-number,
+#editorSettingsTopBar #topBarSmartSitePanel div,
+#publishFlow .colored {
+  color: #e29933 !important; }
+
+.fc-event {
+  border: 1px solid rgba(226, 153, 51, 0.5) !important;
+  background-color: rgba(226, 153, 51, 0.5) !important; }
+
+div.buttons div.button.selected > a[data-buttonstyle="CONTRAST_ICON"]:hover span.icon {
+  color: #d88b1f !important; }
+
+div.buttons div.button.selected > a[data-buttonstyle="SQUISHY"]:not(:hover) {
+  box-shadow: inset 0 -6px 0 0 rgba(0, 0, 0, 0.2), 0 -3px 0 0 #e29933 !important;
+  -webkit-box-shadow: inset 0 -6px 0 0 rgba(0, 0, 0, 0.2), 0 -3px 0 0 #e29933 !important;
+  -moz-box-shadow: inset 0 -6px 0 0 rgba(0, 0, 0, 0.2), 0 -3px 0 0 #e29933 !important; }
+
+#headerLogoLink {
+  background-image: url("https://irp-cdn.multiscreensite.com/-resellers-preview/websitebuilder@uolinc.com/logo/bvmo8hg65bi9o513ste2228ic6.png") !important;
+  background-repeat: no-repeat !important;
+  background-position-y: center !important;
+  background-position-x: left;
+  background-size: contain !important; }
+
+#popupPageType .fromSiteSettings .importPagesLink,
+#publishFlow #goLiveStepInfo.republish a,
+#publishFlow #goLiveStepInfo a.siteLink {
+  color: #e29933 !important; }
+
+.textOnLightColor,
+#popupPageType .pageTypePlaceholder .contentIconBtnWrapper:hover,
+.cssDevices #allDevices.selected,
+.cssDevices #specificDevice.selected,
+#mediapicker ul.tabs li > a.active > div,
+#smartInnerPanel .pageSection.mainSection .multiselect.selected,
+#rulesWizardContainer .multiselect.selected:before,
+.oneSelectPlan .onePlansReseller .businessPlan .planName,
+.oneSelectPlan .onePlansReseller .ecommercePlan .planName,
+#developerModeLeftPanel .navigationTree .treeWrapper .treeNodes .file.selected > span {
+  color: #535353 !important; }
+
+#developerModeLeftPanel .navigationTree .add-new-page-button,
+#developerModeLeftPanel .navigationTree .open-addfile-popup {
+  fill: #535353 !important;
+  color: #535353 !important; }
+
+.textOnLightColorFill,
+.contentIconBtnWrapper:hover .icon,
+#smartInnerPanel .parameter-picker.visits-parameter-picker .firstTimeVisitor.selected svg,
+#smartInnerPanel .parameter-picker.visits-parameter-picker .returningVisitor.selected svg {
+  fill: #535353 !important; }
+
+.textOnLightBackground,
+#smartInnerPanel input[type="radio"] + label span:first-child:before,
+#d1Tip .progress .dot.current {
+  background-color: #535353 !important; }
+
+.textOnLightBorderBottomColor,
+.cssDevices #allDevices.selected,
+.cssDevices #specificDevice.selected {
+  border-bottom-color: #535353 !important; }
+
+.textOnLightBorderColor,
+#mediapicker .pagination li.active {
+  border-color: #535353 !important; }
+
+.buttonColorBackground,
+.updateButton,
+.popupWinExample .confirmDeleteButtons #notConfirmDelete {
+  background: #e29933 !important; }
+
+.textOnButtonColor,
+.updateButton,
+.popupWinExample .confirmDeleteButtons #notConfirmDelete,
+.popupWinExample .confirmDeleteButtons #confirmDelete:hover {
+  color: white !important; }
+
+.textOnButtonFill,
+#rulesWizardContainer .wizardStepsWrapper .wizardStep.currentStep .icon svg {
+  fill: white !important; }
+
+.textOnButtonBorderColor,
+.popupWinExample .confirmDeleteButtons #confirmDelete:hover {
+  border-color: white !important; }
+
+.textOnDarkColor,
+#inlineHTMLEditor .titleContainer .active {
+  color: #158ce4 !important; }

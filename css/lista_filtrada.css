@@ -1,0 +1,250 @@
+@charset "UTF-8";
+.interfaceListaFiltrada {
+    margin-top: 50px
+}
+
+#bodyCadastro {
+    background: #ddd
+}
+
+.interfaceListaFiltrada .row .iconMenu .fa-bars {
+    margin: auto auto 10px 30px;
+    font-size: 27pt;
+    border: 1px solid #6a6f73;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    text-align: center
+}
+
+.interfaceListaFiltrada .row #listaD {
+    padding: 0 5px!important
+}
+
+.interfaceListaFiltrada .row #listaD .div12 .di4 .carousel .carousel-inner>.tipo {
+    font-family: 'Do Hyeon', sans-serif;
+    color: #6a6f73;
+    font-size: 15pt;
+    position: absolute;
+    margin: 10px;
+    z-index: 9
+}
+
+.interfaceListaFiltrada>.row>#listaD>.div12 {
+    border: 1px solid #6a6f73;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 0
+}
+
+.interfaceListaFiltrada>.row>#listaD>.div12>.row {
+    height: 100%;
+    width: 100%;
+    margin: 0
+}
+
+.interfaceListaFiltrada>.row>#listaD>.div12>.row>.di4,
+.interfaceListaFiltrada>.row>#listaD>.div12>.row>.div8 {
+    width: 100%;
+    padding: 0
+}
+
+.interfaceListaFiltrada>.row>.div4 {
+    padding: 0 5px 10px;
+    margin-left: 0
+}
+
+.interfaceListaFiltrada>.row>.div4>form {
+    border: 1px solid #6a6f73;
+    background-color: #fff;
+    width: 100%;
+    height: 440 px;
+    padding: 0;
+    margin-left: 0
+}
+
+.interfaceListaFiltrada>.row>.div4>form>.itens {
+    padding-left: 10px;
+    margin: 16px 0
+}
+
+.interfaceListaFiltrada>.row>.div4>form>.itens>.item {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    list-style: none;
+    margin-left: 20px
+}
+
+.interfaceListaFiltrada .row #listaD .div12 .div8 .descriText,
+.interfaceListaFiltrada .row #listaD .div12 .div8 .endereco>.localizacao,
+.interfaceListaFiltrada>.row>.div4>form>.itens>.item>input {
+    display: none
+}
+
+.interfaceListaFiltrada>.row>.div4>form>.itens>.item>label {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 21px;
+    width: 33px;
+    height: 33px;
+    border: 1px solid
+}
+
+input:checked+label {
+    color: #6a6f73;
+    background-color: orange
+}
+
+.interfaceListaFiltrada>.row>.div4>form>.vaga>span {
+    margin-right: 11px
+}
+
+.interfaceListaFiltrada>.row>.div4>form>.form-control,
+.interfaceListaFiltrada>.row>.div4>form>button {
+    margin: 20px auto;
+    border: 1px solid #6a6f73;
+    border-radius: 5px;
+    width: 90%
+}
+
+#slidesConteiner>.slider-labels>.caption {
+    font-size: 14px
+}
+
+.interfaceListaFiltrada .row .div4>.carousel>.btn {
+    margin-bottom: 10px
+}
+
+.interfaceListaFiltrada .row #listaD .div12 .di4 .carousel .carousel-inner>.imagem {
+    border: 1px solid #6a6f73
+}
+
+.interfaceListaFiltrada>.row>#listaD>.div12>.row>.di4>.carousel,
+.interfaceListaFiltrada>.row>#listaD>.div12>.row>.di4>.carousel>.carousel-inner,
+.interfaceListaFiltrada>.row>#listaD>.div12>.row>.di4>.carousel>.carousel-inner>.carousel-item,
+.interfaceListaFiltrada>.row>#listaD>.div12>.row>.di4>.carousel>.carousel-inner>.carousel-item>img {
+    height: 242px;
+    width: 100%
+}
+.interfaceListaFiltrada>.row>#listaD>.div12>.row>.di4>.carousel>.carousel-inner>.carousel-item>img {
+    border-right: 1px solid #6a6f73
+}
+
+.div12>.row>.di4>.carousel>.label-info {
+    position: relative;
+    bottom: 23px;
+    color: #000;
+    background: coral
+}
+
+.interfaceListaFiltrada .row #listaD .div12>.row>.btn {
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 100;
+    padding: 0;
+}
+
+.interfaceListaFiltrada .row #listaD .div12>.row>.btn>a {
+    color: #000;
+    text-decoration: none;
+    padding: 0
+}
+
+.interfaceListaFiltrada .row #listaD .div12>.row>.btn:hover,
+.interfaceListaFiltrada .row #listaD .div12>.row>.btn>a:hover {
+    background: #6a6f73;
+    color: #fff
+}
+
+.interfaceListaFiltrada .row #listaD .div12>.row>.btn:hover>a {
+    color: #fff
+}
+
+.interfaceListaFiltrada .row .di4 .Filtro {
+    margin: auto 10px
+}
+
+.interfaceListaFiltrada .row #listaD .div12 .div8>.endereco,
+.interfaceListaFiltrada .row #listaD .div12 .div8>.descricao  {
+    padding:10px 4px;
+    border-top:1px solid;
+    width: 99%;
+    margin: auto;
+}
+
+.interfaceListaFiltrada .row #listaD .div12 .div8>.col-sm-12>.preco {
+    font-size: 14pt;
+    color: orange;
+    white-space: nowrap
+}
+
+.interfaceListaFiltrada .row #listaD .div12 .div8 .endereco {
+    color: #008B8B;
+}
+
+.interfaceListaFiltrada .row #listaD .div12 .div8 .descricao {
+    color: #6a6f73;
+    font-size: 14px;
+    text-align: center;
+}
+@media screen and (max-width:600px) {
+    .interfaceListaFiltrada .row #listaD .div12 .div8 .descricao>span:nth-child(3):after{
+        content:"\A";
+        white-space: pre;
+    }
+    .interfaceListaFiltrada .row #listaD .div12>.row>.btn {
+        width: 100%;
+        padding: 8px;
+        font-size: 19px;
+    }
+
+}
+
+.interfaceListaFiltrada>.row>.nav_paginacao {
+    margin: auto
+}
+
+@media screen and (min-width:600px) {
+    .filtro-fixo {
+        position: sticky;
+        top: 20px
+    }
+    .interfaceListaFiltrada {
+        width: 97%
+    }
+    .interfaceListaFiltrada .row #listaD .div12 .div8 .endereco>.localizacao {
+        display: inline-block
+    }
+    .interfaceListaFiltrada .row #listaD .div12 .div8 .descriText {
+        display: block;
+        font-family: Lato, 'Trebuchet MS', Arial, sans-serif;
+        font-size: .9 em;
+        color: #6a6f73;
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto
+    }
+    .interfaceListaFiltrada .row #listaD .div12 .div8 .descricao>span{
+        padding-left: 0;
+        margin-left:  0;
+    }
+    .interfaceListaFiltrada .row #listaD .div12>.row>.btn {
+        position: absolute;
+        right:10px; 
+        bottom: 10px;
+    }
+    .interfaceListaFiltrada .row #listaD .div12 .div8>.endereco,
+    .interfaceListaFiltrada .row #listaD .div12 .div8>.descricao  {
+        border-top:none;
+        width: 100%;
+    }
+    .interfaceListaFiltrada .row #listaD .div12 .div8 .descricao>span:nth-child(3):after{
+        content: "|";
+    }
+
+}

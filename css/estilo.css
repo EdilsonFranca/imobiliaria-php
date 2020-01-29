@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Lato, 'Trebuchet MS', Arial, sans-serif
+}
+
+a:link {
+    text-decoration: none
+}
+
+#interface>.card-deck>.row {
+    padding-bottom: 20px;
+    margin: auto;
+    width: 100%
+}
+
+#interface>.card-deck>.row>.col-sm-4 {
+    margin: auto
+}
+
+#interface>.slide {
+    height: 550px;
+    width: 100%;
+    margin: auto
+}
+
+#interface>.slide>.imagem_principal {
+    background-image: url(../img/foto-principal.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+#interface>.slide>.imagem_principal>.filtro_principal>.formulario_principal {
+    max-width: 100%;
+    margin: 150px auto auto;
+    background: rgba(0, 0, 0, .6);
+    padding: 15px 0
+}
+
+#interface>.slide>.imagem_principal>.filtro_principal>.formulario_principal>.formulario_principal_div {
+    border: 5px double coral;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    max-width: 587px;
+    padding: 5px
+}
+
+.filtro_principal>.formulario_principal>.formulario_principal_div>.formulario_principal_div_input {
+    margin: 0
+}
+
+.filtro_principal>.formulario_principal>.formulario_principal_div>.formulario_principal_div_input:nth-child(2),
+.filtro_principal>.formulario_principal>.formulario_principal_div>.formulario_principal_div_input:nth-child(5) {
+    display: inline-block;
+    margin-right: -5px
+}
+
+.filtro_principal>.formulario_principal>.formulario_principal_div>.select_tipo {
+    width: 33%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-right: 1px;
+    padding: 11px 0
+}
+
+.filtro_principal>.formulario_principal>.formulario_principal_div>.formulario_principal_div_input:nth-child(4) {
+    display: none
+}
+
+.filtro_principal>.formulario_principal>.formulario_principal_div>.input_bairro {
+    width: 47%;
+    padding: 11px;
+    border-left: 1px;
+    margin-left: 0
+}
+
+.slider-labels>.caption {
+    color: #fff
+}
+
+.filtro_principal>.formulario_principal>.formulario_principal_div>button {
+    width: 20%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    background: coral
+}
+
+.row>.titulo_da_section {
+    margin: auto
+}
+#interface > .card-deck > .row > .col-sm-4 {
+    width: 439px;
+    padding: 0;
+}
+
+.col-sm-4>.card>.img>.carousel,
+.col-sm-4>.card>.img>.carousel>.carousel-inner,
+.col-sm-4>.card>.img>.carousel>.carousel-inner>a>.carousel-item,
+.col-sm-4>.card>.img>.carousel>.carousel-inner>a>.carousel-item>img {
+    height: 242px;
+    width: 100%
+}
+
+.col-sm-4>.card>.img>.carousel>.carousel-inner>.titulo_slider {
+    font-family: monospace;
+    color: #fff;
+    font-size: 11pt;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, .6)
+}
+
+.col-sm-4>.card>.img>.carousel>.carousel-inner>a>.active {
+    position: relative
+}
+
+.col-sm-4>.card>.img>.carousel>.carousel-inner>a>.carousel-item>img {
+    width: 100%!important;
+    height: 250px
+}
+
+.col-sm-4>.card>.img {
+    width: 97%;
+    height: 250px;
+    overflow: hidden;
+    margin: 5px auto auto
+}
+
+.col-sm-4>.card>.img>.carousel>.label-info {
+    position: relative;
+    bottom: 30px;
+    z-index: 1000
+}
+
+.col-sm-4>.card>.img>.carousel>.label-info {
+    color: #000;
+    background: coral
+}
+
+.col-sm-4>.card>.card-body {
+    font-family: monospace;
+    font-size: 13px;
+    color: #708090;
+    width: 99%;
+    margin: auto;
+    border-top: 1px solid #696969;
+    padding-right: 0;
+    padding-left: 0
+}
+
+.col-sm-4>.card>.card-body i {
+    color: coral
+}
+
+.col-sm-4>.card>.card-body>.card-body-info>i {
+    font-size: 8pt;
+    color: #708090
+}
+
+@media only screen and (min-width:380px) {
+    .filtro_principal>.formulario_principal>.formulario_principal_div>.formulario_principal_div_input:nth-child(4) {
+        display: inline-block;
+        padding: 11px 10px;
+        width: 17%
+    }
+    .filtro_principal>.formulario_principal>.formulario_principal_div>.formulario_principal_div_input:nth-child(2) {
+        padding: 11px 10px
+    }
+    .filtro_principal>.formulario_principal>.formulario_principal_div>.input_bairro {
+        width: 34%;
+        border: none;
+        margin-left: -5px;
+        padding: 12px
+    }
+    .filtro_principal>.formulario_principal>.formulario_principal_div>button {
+        width: 16%
+    }
+    #interface>.slide>.imagem_principal>.filtro_principal>.formulario_principal {
+        max-width: 589px
+    }
+    #log {
+        height: 250px;
+        width: 250px;
+        border: 1px solid red
+    }
+    .box-whatsapp {
+        position: fixed;
+        top: 84%;
+        left: 94%;
+        transform: translate(-50%, -50%);
+        color: orange !important;
+    }
+    .col-sm-4>.card>.card-body>.card-body-info>i {
+        font-size: 10pt;
+        color: #708090
+    }
+    #interface > .card-deck > .row > .col-sm-4 {
+        padding: 0 5px;
+    }
+}

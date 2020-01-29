@@ -1,0 +1,1 @@
+$(document).ready(function(){$("select").niceSelect()}),setTimeout(function(){$(".textAlert").fadeOut("slow")},3e3);

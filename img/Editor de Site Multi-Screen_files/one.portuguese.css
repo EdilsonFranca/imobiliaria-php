@@ -1,0 +1,620 @@
+/*change the width of the template category */
+/* .themesCategories li {
+	margin: 0 3px;
+}
+ */
+/*change the width of the row menu */
+.dmRowContextMenuWrap {
+	width: 145px;
+}
+
+/*row-change the width of the hide on device  menu */
+.dmRowContextMenuWrap .dmRowContextMenuRow .dmRowEditorHideOnDeviceContainer {
+	right: -180px;
+	min-width: 180px;
+}
+
+.dmRowEditor .dmRowEditorButton.dmRespEditorMenuButton:hover, .dmRowEditor.dmRowEditorOpen .dmRowEditorButton.dmRespEditorMenuButton {
+	width:116px;
+}
+
+/*change the width of the widget menu */
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne {
+	width: 140px;
+	min-width: 140px;
+}
+
+/*change the width of the hide on device  menu */
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorHideOnDeviceContainer {
+	right: -185px;
+	min-width: 185px;
+	width:185px;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorHideOnDeviceContainer.leftSide {
+	left:-185px;
+}
+
+/* change the width of the top bar action panel in the css editor */
+#cssEditorTopBarActionPanel #cssEditorSaveBtn,#cssEditorTopBarActionPanel #cssEditorCancelBtn {
+	width:93px;
+}
+
+#passwordPageAction.ptOrangeBtn{
+	padding: 0px 13px !important; 
+}
+
+/* #header_img-logo-edit #header_img-change-crop {
+	padding: 13px 18px;
+}
+
+#header_img-logo-edit #header_img-change-crop #header_img_thumb {
+	width:127px;
+	margin-right: 1px;
+}
+
+#header_img-logo-edit #header_img-change-crop .blueBtn {
+	margin-right: 1px;
+} */
+
+.footerEditable .applyButton, .footerEditable .refreshButton {
+	width:110px;
+}
+
+#_editor {
+	width: 483px;
+}
+
+.widgetEditorTop .slideBtn {
+	width:81px;
+}
+
+#mapGeneralSelection .menuBtn, .menuPanel .menuBtn, .navEmptyNav .menuBtn, .openHoursEditor .menuBtn, #couponTypeSelection .menuBtn {
+	width:325px;
+}
+
+body.editGrid #dm .dmOuter .dmInner .contextMenuInner div:hover .subNav {
+	text-transform:capitalize;
+	
+}
+
+
+/*content library,import button */
+.contentLibraryImportWrapper .contentLibraryImportBody input {
+	padding: 0 4px;
+	width: 439px;
+}
+
+.contentLibraryImportWrapper .contentLibraryImportBody {
+	padding: 50px 132px;
+}
+
+#siteSettingsInnerPanel .settingsPage .iconUploadButton .noIcon {
+	width:55px;
+}
+
+#siteSettingsInnerPanel .settingsPage .grayBtn.siteSettSaveBtn {
+	width:76px;
+}
+
+/*sit settings */
+#siteSettingsInnerPanel .settingsPage input[type="text"] {
+	padding: 5px 3px;
+	width: 280px;
+}
+
+#currentVersion span.backupBtn.ptOrangeBtn {
+	padding: 0 36px 0 16px ;
+}
+
+/* content library Business Information */
+#dudaoneInnerShellContactLibrarySlidePanel .bizInfoClose {
+	right: 180px;
+}
+
+.farPopup .actionSection {
+	padding: 0 40px 0 170px;
+}
+
+.farPopup #iconHolder {
+	right: -3px;
+}
+
+/* .startWrapper a.blueBut {
+	line-height: 21px;
+} */
+
+
+.shareIt.w930 {
+	width:1111px;
+}
+
+#header_img-logo-edit #header_img-change-crop .blueBtn {
+	margin-right: 2px;
+}
+
+.cropButton.orangeBtn.ptOrangeBtn {
+	padding: 0px 42px 0 15px;
+}
+
+/*contact form email settings*/
+span.SettingsCheckboxTextWrapper{
+	font-size:15px;
+}
+
+.formEmailSetting .SettingsCheckbox + label span {
+	padding-left: 17px;
+}
+
+.formEmailSetting #formSuccessPages {
+	right: -8px;
+}
+
+.socialHub #iconsSelectorLine {
+	width:461px;
+}
+
+/*css content */
+body.editGrid .grid-row > .label:after {
+	content: 'Linha';
+}
+
+.bodyInsideD1 .imageWidget[data-placeholder='true']:after {
+	content:"Clique para editar imagem";
+}
+
+.bodyInsideD1 .dmImageSlider[data-placeholder='true']:after {
+	
+	content:"Clique para editar slideshow";
+}
+
+.dmRespRow .dmRespCol.dmRespColEmptyPlaceHolder.neeInlineMarkedElement:after, body:not(.dmDudaonePreviewBody) .dmRespRow:not(.dmDraggedDomElement):hover .dmRespColEmptyPlaceHolder:after, .dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColEmptyPlaceHolderNotify:after
+ {
+	content: "Leere Spalte";
+}
+
+.bodyInsideD1 .dmPhotoGallery[data-placeholder='true']:after {
+	content: "Clique para adicionar galeria";
+}
+
+.smallTempPlaceHlderForImage:after {
+	content: "Adicionar imagem";
+}
+
+.bodyInsideD1 .dmYelp[data-placeholder='true']:after {
+	content: "Clique para adicionar Yelp comentários";
+}
+
+.bodyInsideD1 .dmParagraphPlaceholder:after {
+	content: "Isto é um paragráfo. Escrever em paragráfos pode ser muito útil para os seus visitantes. Isto facilita-os a encontrar o que estāo procurando mais rapidamente. Certifique-se de que o título destaca-se do resto do texto, e que o texto é grande o suficiente para leitura.";
+}
+
+.rightPanel .explanationHowToGallery .deleteAllImagesBtn:after {
+	content: "Apagar todas as imagens";
+}
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton.dmSelectionOverlayMoreButton {
+	width:140px;
+}
+
+/* rulw wizard -insite */ 
+#rulesWizardContainer .chooseRuleSection a.button {
+	min-width:120px;
+}
+
+#rulesWizardContainer .multiselect {
+	width:116px;
+}
+
+.stepMain .notes {
+	width:571px;
+}
+
+#smartInnerPanel .newRulePage .parameter-picker.url-params-parameter-picker .toggleLink.urlBuilder.open + .toggleContent {
+	height:160px;
+}
+
+#rulesWizardContainer .multiselect {
+	height:88px;
+}
+
+.deleteButtonsWrapper .popupBtn {
+	width:90px;
+}
+
+#smartInnerPanel .newRulePage .parameter-picker.inject-script-parameter-picker .button.previewButton ,#smartInnerPanel .newRulePage .parameter-picker.message-parameter-picker .button.previewButton{
+	width:148px;
+}
+
+#smartInnerPanel .newRulePage .parameter-picker.changebg-parameter-picker .button {
+	width:185px;
+}
+
+.dmRespRow.dmPlaceHolderRespRow .dmRespCol:before, .dmRespRow.dmPlaceHolderRespRow:hover .dmRespCol:before {
+	content: "Neue Zeile";
+}
+
+.footerEditable .gotoDevModeButton {
+	width:152px;
+}
+
+.textTransform {
+	text-transform: lowercase;
+}
+#colorPickerWidget #cancelBtn{
+	width:85px;
+}
+
+.avpw_inset_button_with_plus {
+	width:108px !important;
+}
+
+.dontHavePayPalSign {
+	left: 20px;
+} 
+
+.footerEditable .backButton.blueBtn.ptGreyBtn {
+	padding: 0px 9px;
+	font-size: 14px;
+}
+
+#holydaysWarper #addHolydayBtn {
+	left:48px;
+}
+
+#Wrapper .dudaoneSlidePanel {
+	width:530px ;
+}
+
+#rulesWizardContainer .similarRulesChildrenSection .ruleContent .buttonWrapper a.button {
+	width:135px;
+}
+
+#smartInnerPanel .newRulePage .pageSection.mainSection .stepHeader {
+	padding :50px 20px;
+}
+
+#editRuleActions {
+	width:196px;
+}
+
+#smartInnerPanel .newRulePage .parameter-picker.changebg-parameter-picker .button.previewButton ,#smartInnerPanel .newRulePage .parameter-picker.custom-script-parameter-picker .button.previewButton {
+	width:153px;
+}
+
+#rulesWizardContainer .similarRulesParentSection a.button {
+	width:125px;
+}
+
+#rulesWizardContainer .similarRulesChildrenSection div[data-rule-id="off-hours-meeting"],#rulesWizardContainer .similarRulesChildrenSection div[data-rule-id="off-hours-call"]{
+	height: 230px;
+} 
+
+
+.themesPanelTitle .backButton {
+	left:-93px;
+}
+
+#popupPageType .fromSiteSettings .otherPageSection input ,#popupPageType input[type="text"]{
+	width:68%;
+}
+
+input.formAddCaptcha {
+	margin-right:5px;
+}
+
+
+
+#dm button.ecwid-btn--primary.ecwid-btn--addToBag {
+	width:240px;
+}
+
+#storePanel .storePanelWrapper div.settingsContainer div.collapseContainer.open {
+	height: 191px;
+}
+
+@media only screen and (max-width: 1400px) {
+#storePanel .storePanelWrapper div.settingsContainer div.collapseContainer div.settingsItemContent .storeSettings .selectPagForNavWrapper #selectBoxWrapper, #storePanel .storePanelWrapper div.settingsContainer div.collapseContainer div.settingsItemContent .storeSettings .toggleSubNavigationWrapper #toggleSubNavigation{
+	float:right !important;
+}
+}
+
+
+@media screen and (max-height: 800px) {
+	.themesPanelColorsWrapper{
+		max-width: 1112px !important;
+	}
+}
+
+#storePanel .storePanelWrapper div.settingsContainer div.collapseContainer div.settingsItemContent .storeSettings .toggleSubNavigationWrapper #toggleSubNavigation,#storePanel .storePanelWrapper div.settingsContainer div.collapseContainer div.settingsItemContent .storeSettings .selectPagForNavWrapper #selectBoxWrapper {
+	float:left;
+}
+
+div#addHolydayBtn {
+	text-transform: none !important;
+}
+
+#editPanelPagesContainer li.pageItem div.pageSettings ul li {
+	width:216px;
+}
+
+#editPanelPagesContainer li.pageItem.settingsMode > .pageSettings > ul li:hover ul.hidePageMenuWrapper {
+	margin-left:202px;
+}
+
+#rulesWizardContainer .chooseRuleSection {
+	height:245px;
+}
+
+#editorSettingsTopBar div.actionsPanel > a.ptOrangeBtn {
+	width:150px;
+}
+
+#smartModeTip .smartModeTipTitle .circle {
+	margin-right: 5px;
+	margin-left: -17px;
+}
+
+#cssEditorSavePreviewBtn {
+	font-size: 0.9em !important;
+}
+
+@media only screen and (max-width: 1400px) {
+  #smartModeTip:not(.closeSmartMode) {
+    min-width: 314px !important;
+  }
+}
+
+#d1Tip {
+	width:319px;
+}
+
+.confirmDeleteButtons {
+	margin-top: 4px;
+} 
+
+.leavePagePopup .leavePageContent {
+	margin-top :13px;
+}
+
+#smartInnerPanel .newRulePage .pageSection.pageSectionDone .parameter-picker {
+	width: 373px;
+} 
+
+a.previewLink.button.gray {
+width: 210px !important;
+}
+
+/* -----------------
+ Theme selection 
+------------------- */
+.generalModeStartInner {
+	width: 520px;
+}
+.generalModeStartInner .inputWrapper .urlInput {
+  	width: 320px;
+}
+.generalModeStartInner .startWrapper .blueBut {
+	float: right;
+}
+
+/* Theme selection - Preview */
+.themeDetails { width: 510px; }
+.themeDetails .noThanks {
+	font-size: 15px;
+
+}
+.themeDetails .noThanks .blueBut {
+	margin-right: 6px;
+	width: 30%;
+}
+
+/* ----------------
+ Editor
+----------------- */
+.themeDetails .noThanks .blueBut {
+	font-size: 14px;
+	width: 28%;
+}
+
+/* Color picker */
+#colorPickerWidget #doneBtn {
+	width: 74px;
+}
+
+/* Tabs */
+.widgetEditorTop .slideBtn {
+	width: 90px;
+}
+
+/* Publish flow */
+#publishFlow #goLiveStepInfo .changeSiteNameBtn {
+	width: 184px;
+}
+
+/* Editors */
+#_p_editor .SettingsCheckboxTextWrapper {
+	width: 300px;
+}
+#_p_editor [data-current-tab="formGeneral"] .SettingsCheckboxTextWrapper {
+	width: auto;
+}
+#_p_editor .headerEdt {
+	padding: 18px 16px;
+}
+#_p_editor .headerEdt {
+	height: auto;
+}
+#_p_editor .breadcrumb {
+	white-space: normal;
+}
+#_p_editor .dontHavePayPalSign {
+  left: 310px;
+  top: -32px;
+}
+
+/* First time tour */
+#d1Tour #middleSection #takeATour {
+  margin: 0 140px;
+}
+
+/* Insite - Rule wizard */
+.stepMain-nth {
+	display: none;
+}
+
+.productBrowserGeneralTab .ptColorListWrapper select {
+	width: 80px;
+}
+
+#storePanel .storePanelWrapper div.manageStoreBtn {
+	width: 270px;
+}
+
+#storePanel .storePanelWrapper .chooseStoreSizeSection .addStoreButtonWrapper .leftPanelButtonStyle {
+	width: 270px;
+}
+
+#duplicatePageDialog #duplicatePageAction {
+	padding: 0px 15px;
+}
+
+.bodyInsideD1 .imgTxtBtnTmpl .dmParagraphPlaceholder:after,
+.bodyInsideD1 .fullTxtBtnTmpl .dmParagraphPlaceholder:after,
+.bodyInsideD1 .fullTxtSocialTmpl .dmParagraphPlaceholder:after
+{
+	  content: "Isto é um paragráfo. Escrever em paragráfos pode ser muito útil para os seus visitantes. Isto facilita-os a encontrar o que estāo procurando mais rapidamente. Certifique-se de que o título destaca-se do resto do texto, e que o texto é grande o suficiente para leitura.";
+}
+
+#_p_editor .footerEditable .updateButton,
+.footerEditable .gotoDevModeButton,
+.footerEditable .applyButton, .footerEditable .refreshButton {
+	font-size: 14px;
+}
+
+#smartInnerPanel .newRulePage label {
+	font-size: 12px;
+}
+.openHoursBuild #DropDownTimezone, .openHoursBuild #weekStartDay, .openHoursBuild #selectLang, .openHoursBuild #displayOption {
+	width: 170px;
+}
+#newCouponChosen textarea.genericInput {
+	width: 340px;
+}
+.shareLink {
+	width: auto;
+}
+.FBLikeEditorItem select {
+	width: 190px;
+}
+.fbAlbumsWrapper #pageSearchContainer input#socialPageLinkInput {
+	width: 340px;
+}
+[data-theme-new="true"] .rowImage:after {
+  background: url(https://dd-cdn.multiscreensite.com/themes-panel/ribbon-new-pt.png);
+}
+#storePanel .storePanelWrapper .chooseStoreSizeSection .addStoreButtonWrapper.addSmallStore .freeRibbon {
+  background-image: url("/editor/dudaone/images/ecommerce/freeRibbonPT.png");
+}
+.oneSelectPlan .plan .planHeader .planTitle .planPrice {
+	font-size: 21px;
+}
+.oneSelectPlan .plan .planHeader .planTitle .month {
+  font-size: 13px;
+}
+.oneSelectPlan .plan .planHeader .planSubTitle {
+  font-size: 13px;
+}
+.oneSelectPlan .plan .planBody .planRowDetails .dm-icon-checkbox_small {
+	padding-right: 10px;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+}
+.oneSelectPlan .plan .planBody .planRowDetails {
+  padding-left: 20px;
+  position: relative;
+    line-height: 1.2em;
+}
+.oneSelectPlan .onePlansRegular .plan.ecommercePlan .planBody .ecommercePlanExplain {
+	font-size: 13px;
+}
+
+[data-current-tab="formGeneral"] .navEditorLinkActive .formInputRequired {
+  top: 15px;
+}
+
+[data-current-tab="formGeneral"] .navEditorLinkActive .formInputRequired .SettingsCheckboxTextWrapper {
+	width: auto;
+}
+
+body.editGrid:not(.ui-disableEditGrid):not(.selectRowMode) #dm .dmRespRow:not(.dmPlaceHolderRespRow) .grid-column.empty:before {
+    content: 'Coluna Vazia';
+}
+
+.farPopup .replaceSection .desc {
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    float: left;
+  margin: 4px 4px 0 0;
+}
+
+.farPopup .replaceSection .desc span:nth-child(1) {
+	  text-transform: lowercase;
+	margin-left: 4px;
+	-webkit-box-ordinal-group: 2;
+  	-webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.farPopup .replaceSection .desc span:nth-child(2) {
+	text-transform: capitalize;
+}
+
+.productBrowserGeneralTab .ptColorListWrapper select {
+  width: 100px;
+}
+
+#storePanel .storePanelWrapper div.settingsContainer div.collapseContainer[data-type="faq"] {
+	display: none;
+}
+
+
+#_editor[data-selected-main-tab="Link"] .footerEditable .removeLinkButton{
+	width:150px;
+}
+
+@media only screen and (max-height: 900px)
+.oneSelectPlan .onePlansRegular .plan .planBody .planRowDetails {
+    height: 31px !important;
+    line-height: 18px !important;
+}
+.bodyInsideD1 .dmSocialHub[data-placeholder='true']:after {
+    content: "Clique para adicionar links sociais";
+}
+.bodyInsideD1 .dmYelp[data-placeholder='true']:after {
+    content: "Clique para adicionar comentários do Yelp";
+}
+.bodyInsideD1 .dmImageSlider[data-placeholder='true']:after {
+    content: "Clique para adicionar um slide de imagem";
+}
+.bodyInsideD1 [dmle_extension="internal_blog_list"][data-placeholder='true']:after {
+	content: "Clique para adicionar posts";
+}
+.bodyInsideD1 .dmRestaurantMenu[data-placeholder='true']:after {
+    content: "Clique para adicionar menu";
+}
+.bodyInsideD1 .imageWidget[data-placeholder='true']:after {
+    content: "Clique para adicionar imagem";
+}
+.bodyInsideD1 .dmPhotoGallery[data-placeholder='true']:after {
+    content: "Clique para adicionar galeria";
+}
+.bodyInsideD1 .dmFacebookGallery[data-placeholder='true']:after {
+    content: "Clique para adicionar álbuns do Facebook";
+}
+.bodyInsideD1 .dmFacebookLike[data-placeholder='true']:after {
+    content: "Clique para adicionar botão de Curtir do Facebook";
+}

@@ -1,0 +1,33 @@
+.erro{color:red;}#interface{width:100%;padding:0;overflow:hidden;}
+.item‐icone-localizacao { width: 2.2em; height:2em;fill: coral;}
+.item‐icone-info { width: 30px; height: 25px;z-index: 100;fill: coral;}
+.item‐icone-search{width: 1.3em;height: 1.3em;}
+.item‐icone-foto{width:35px;height:35px;position:absolute;z-index: 10;float:right;right: 3px;bottom: 3px;}
+.item‐icone-rodape{fill:#3b3c3d;width:25px;height:25px}
+i{font-style: normal  !important; font-weight: 900;}
+.textAlert{position:fixed;top:10%;left:50%;transform:translate(-50%,-50%);font-size:19px;z-index:100}
+.whatsapp{position: fixed;top: 94%;left: 94%;transform: translate(-50%, -50%);fill: #34af23;width:50px;height:50px;z-index: 100;}
+form input.form-erro,
+form textarea.form-erro,
+form button.form-erro {color:red;border:2px solid red !important}
+
+#num_fotos {
+    position: absolute;
+    color: #ff4500;
+    display: block;
+    z-index: 100;
+    float: right;
+    right:  4px;
+    bottom: 25px
+}
+p {
+    font-weight: 300;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: Nunito,sans-serif;
+}

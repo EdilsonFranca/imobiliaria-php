@@ -1,0 +1,170 @@
+body {
+    background: #F1F1F1
+}
+
+.containar {
+    width: 100%;
+}
+
+.row>.col-sm-7 {
+    margin: 20px auto;
+    color: #666
+}
+
+.row>.col-sm-7>.anuncio>h2 {
+    padding: 10px;
+    border: 1px solid #708090;
+    font-size: 18px;
+    font-family: Arial, sans-serif
+}
+
+.carousel,
+.carousel>.carousel-inner,
+.carousel>.carousel-inner>.carousel-item,
+.carousel>.carousel-inner>.carousel-item>img {
+    height: 394px
+}
+
+.carousel>.carousel-inner>.active {
+    position: relative
+}
+
+
+.col-sm-7>.row>.col-sm-12>#mapa {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #708090
+}
+
+.col-sm-7>.row>.col-sm-12>#mapa>.divMapa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    color: #fff;
+    background-color: orange;
+    font-size: 20px;
+    padding: 10px;
+    border: 4px double;
+    border-radius: 10px
+}
+.col-sm-7>.row>.col-sm-12>#mapa>.divMapa>span{
+    display: none;
+}
+.row>.informacoes {
+    margin: 15px 0
+}
+
+.row>.informacoes>.informacoes_preco {
+    color: coral;
+    border: 1px solid #708090;
+    border-bottom: none;
+    margin-top: 10px
+}
+
+.row>.informacoes>.informacoes_ico {
+    padding: 10px 4px;
+    border: 1px solid #708090;
+    border-bottom: none
+}
+
+.row>.informacoes>.informacoes_ico>span {
+    display: inline;
+    padding: 0
+}
+
+.row>.informacoes>.informacoes_ico>span>i {
+    color: coral
+}
+
+.row>.informacoes>.informacoes_ico>span>i>span {
+    color: #424c53;
+    font-family: monospace
+}
+@media screen and (max-width:600px) {
+    .row>.informacoes>.informacoes_ico>span:nth-child(3):after{
+        content:"\A";
+        white-space: pre;
+    }
+}
+
+.row>.col-sm-12>.descricao {
+    padding: 10px 5px;
+    border: 1px solid #708090;
+    background-color: #fff
+}
+
+.row>.col-sm-12>.localizacao {
+    padding: 10px;
+    border: 1px solid #708090;
+    border-bottom: none
+}
+
+.row>.col-sm-12>.localizacao>i {
+    color: coral
+}
+
+.row>.col-sm-12>.localizacao>.localizacao_span {
+    display: none
+}
+
+.row>.localizacao_mapa {
+    height: 230px;
+    width: 100%;
+    margin-bottom: 15px
+}
+
+.row>.margin_bottom {
+    margin-bottom: 20px
+}
+
+.col-sm-4 {
+    margin: 35px auto;
+    color: #666
+}
+
+.col-sm-4>.formulario {
+    margin: auto;
+    border: 1px solid #708090;
+    padding: 20px 0;
+    border-radius: 10px
+}
+
+.col-sm-4>.formulario>#form_contato>.divForm>button {
+    margin-top: 10px
+}
+
+.col-sm-4>.formulario>#form_contato>.divForm>.prime_span {
+    font-family: monospace;
+    font-size: 16px
+}
+
+.justificado-certo {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto
+}
+
+.formulario-fixo {
+    position: sticky;
+    top: 20px
+}
+
+@media only screen and (min-width:400px) {
+    .row>.col-sm-12>.localizacao>.localizacao_span {
+        display: inline-block
+    }
+    .row>.informacoes>.informacoes_ico>span:nth-child(3):after{
+        content: "|";
+     }
+     .col-sm-7>.row>.col-sm-12>#mapa>.divMapa>span{
+        display: block;
+    }
+    .containar {
+        width: 96%;
+        margin: auto
+    }
+}

@@ -1,0 +1,3228 @@
+@charset "ISO-8859-1";
+
+body:after {
+    display: none;
+    content: url(/editor/nee/images/menuPlaceholder.png) url(/editor/nee/images/imageGalleryPlace1.png) url(/_dm/s/rt/scripts/vendor/flexslider/theme/slideshow.png);
+}
+
+.bodyInsideNee .inlineEditorLeftBar, .bodyInsideNee .inlineEditorRightBar,  .bodyInsideNee .inlineEditorBottomBar, .bodyInsideNee .inlineEditorTopBar, .bodyInsideNee .inlineEditor {
+	z-index: 199;
+}
+
+body.dmOnElementInlineResizing, body.dmOnElementInlineSpacing {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+body.dmOnElementInlineResizing *, body.dmOnElementInlineSpacing * {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+body.dmOnElementInlineResizing .dmElementInlineResizing {
+
+}
+
+body.dmOnElementInlineResizing .dmHeader .dmElementInlineResizeableElement {
+	box-shadow: 0px 0px 0px 1px #407ab0;
+}
+
+body.dmOnElementInlineSpacing .dmElementInlineSpacing {
+	
+}
+
+body.dmOnElementInlineResizing .dmHeader .dmElementInlineSpaceableElement {
+
+}
+
+body.noTransitions, body.noTransitions * {
+	-moz-transition-duration: 0 !important;
+  -o-transition-duration: 0 !important;
+  -webkit-transition-duration: 0 !important;
+  transition-duration: 0 !important;
+}
+
+.inlineEditor {
+	position: absolute;
+	height: 31px;
+	background: url(/editor/nee/images/inlineEditorTitleBarBackground.png);
+	opacity:0.7;
+	background-repeat: repeat-x;
+	z-index: 1000000000 !important;
+}
+
+.inlineEditorNew {
+	position: absolute;
+	height: 31px;
+	z-index: 1000000000;
+}
+
+.inlineEditorCoverNew {
+	position: absolute;
+	z-index: 1000000000;
+}
+
+.inlineEditorSelectionOverlayNew.overlayBringToTop {
+	z-index: 1000000006;
+}
+
+.inlineEditorSelectionOverlayNew {
+	position: absolute;
+	z-index: 1000000001;
+    border: 1px rgba(0,0,0,0.5) solid;
+    box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.5);
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	pointer-events: none;
+	direction: ltr;
+	font-weight: normal;
+}
+.inlineEditorSelectionOverlayNew.dmLocked {
+	background: transparent;
+    border: 1px rgba(0,0,0,0.4) solid;
+}
+.inlineEditorSelectionOverlayNew.inlineEditorSelectionOverlayTransparentNew {
+	background: transparent;
+}
+
+.inlineEditorSelectionOverlayNew.selectionOverlayMoveSign {
+	cursor: move;
+}
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayInside {
+	position: absolute;
+	top: calc(50% - 13px);
+	left: calc(50% - 105px);
+	min-width: 130px;
+	height: 26px;
+}
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton {
+	-webkit-transition: all 0.15s;
+	-moz-transition: all 0.15s;
+	-o-transition: all 0.15s;
+	-ms-transition: all 0.15s;
+	transition: all 0.15s;
+/* 	border-radius: 2px; */
+	background-clip: padding-box;
+	background-color: #407ab0;
+	color: #fff;
+	padding: 0px 16px 1px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1.8em;
+	cursor: pointer;
+	text-align: center;
+	pointer-events: all;
+}
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton.dmSelectionOverlayEditButton {
+
+}
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton.dmSelectionOverlayTitleButton {
+	background-color: #f08a50;
+	color: #FFF;
+	text-align: center;
+	text-transform: capitalize;
+	margin-right: 5px;
+}
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton.dmSelectionOverlayBackgroundButton {
+	margin-left: 5px;
+}
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton.dmSelectionOverlayReplaceButton {
+	margin-left: 5px;
+}
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton.dmSelectionOverlayMoreButton .arrow {
+	font-size: 10px;
+/* 	width: 20px; */
+/* 	height: 20px; */
+	line-height: 20px;
+	display: inline-block;
+	float: right;
+}
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton.dmSelectionOverlayMoreButton .text {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 108px;
+	white-space: nowrap;
+	font-family: Arial;
+	font-size: 11px;
+}
+
+#dm #iscrollBody .inlineEditorSelectionOverlayNew .dmSelectionOverlayButton .text,
+#dm #iscrollBody .inlineEditorNew.inlineEditorNewContext *,
+#dm #iscrollBody .dmContextMenuOuterWrap *,
+#dm #iscrollBody .dmRowEditor *,
+#dm .dmHeaderLabelSign {
+	font-family: Arial !important;
+}
+
+#dm .dmInner #iscrollBody .dmRowEditor *[class*="dm-icon-"],
+#dm .dmInner #iscrollBody .DMSelectionElement *[class*="dm-icon-"],
+#dm .dmHeaderLabelSign *[class*="dm-icon-"] {
+	font-family: 'dm-font' !important;
+} 
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton.dmSelectionOverlayMoreButton {
+/* 	margin-left: 5px; */
+	font-size: 12px;
+	height: 26px;
+	line-height: 18px;
+	padding: 0px;
+	padding-left: 5px;
+	padding-top: 4px;
+	position: relative;
+	top: 0px;
+	padding-right: 5px;
+	text-transform: uppercase;
+	width: 130px;
+}
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton.dmSelectionOverlayDeleteElementOuterButton {
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 0 !important;
+    top: 0 !important;
+    left: auto !important;
+
+}
+
+
+.inlineEditorSelectionOverlayNew .dmSelectionOverlayButton.dmSelectionOverlayDeleteElementButton {
+    font-size: 10px;
+    height: 18px;
+    background-color: #cc3030;
+    width: 18px;
+    overflow: hidden;
+    padding: 0;
+
+}
+
+.inlineEditorNew.inlineEditorNewContext {
+	position: absolute;
+	height: auto;
+	z-index: 1000000100;
+	background: #FFFFFF;
+	border: 1px solid #b6b6b6;
+	font-family: Arial;
+	-moz-box-shadow: 0px 0px 4px #292929;
+	-webkit-box-shadow: 0px 0px 4px #292929;
+	box-shadow: 0px 0px 4px #292929;
+	min-width: 80px;
+	pointer-events: all;
+}
+
+.dmTempCoverImage {
+	position: absolute;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorElement {
+	height: 33px;
+	line-height: 33px;
+	text-align: left;
+	cursor: pointer;
+	border-top: 1px solid #ccc;
+	color: #676767;
+	padding: 0px 10px;
+	font-size: 12px;
+	position: relative;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorElement>div:first-child {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+/* 	line-height: inherit; */
+}
+
+.DMInlineEditorAlignBtnsWrapOuter {
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorElement.DMInlineEditorAlignBtnsWrapOuter:hover {
+	background: transparent;
+	color: #676767;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorElement.DMInlineEditorAlignBtnsWrapOuter {
+	padding: 0;
+}
+
+.DMInlineEditorAlignBtnsWrap {
+	margin: 0 auto;
+	width: 105px;
+}
+
+.DMInlineEditorAlignBtnsWrap .DMInlineEditorAlignBtn:hover {
+	background-color: #407ab0;
+	color: #fff;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorAlignBtnsWrap .DMInlineEditorAlignBtn.DMInlineEditorAlignBtnSelected {
+	background-color: #407ab0;
+	color: #fff;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorAlignBtnsWrap .DMInlineEditorAlignBtn {
+	display: inline-block;
+	border-bottom: none !important;
+	width: 35px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 15px;
+}
+
+a.dmRowEditorDeleteColumnButton {
+	position: absolute;
+	height: 23px;
+	width: 23px;
+	font-size: 11px;
+	text-align: center;
+	color: #FFF;
+	background-color: #cc3030;
+	font-family: dm-font !important;
+	line-height: 23px;
+	cursor: pointer;
+	z-index: 1000000001;
+}
+
+.dmRowContextMenuWrap .dmRowEditorButton > .icon,
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorElement > .icon {
+    position: absolute;
+    right: 4px;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    margin-top: -8px;
+}
+.dmRowContextMenuWrap .dmRowEditorButton > .icon > svg,
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorElement > .icon > svg {
+    position: absolute;
+    fill: #676767;
+}
+
+.dmRowContextMenuWrap .dmRowEditorButton:hover > .icon > svg,
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorElement:hover  > .icon > svg {
+    fill: #fff;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorElement:hover {
+	background-color: #407ab0;
+	color: #FFF;
+}
+
+.DMInlineEditorDisabled {
+	color: #acacac !important;
+	background-color: #f2f2f2 !important;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorHideOnDeviceGeneralBtn {
+	position: relative;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorHideOnDeviceGeneralBtn .arrow {
+	position: absolute;
+	right: 0px;
+	top: 12px;
+	font-size: 10px;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorHideOnDeviceGeneralBtn:hover .DMInlineEditorHideOnDeviceContainer {
+	opacity: 1;
+	display: block;
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	-ms-transition: opacity .3s ease;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorHideOnDeviceContainer .DMInlineEditorHideOnDeviceBtn {
+	padding-left: 25px;	
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorHideOnDeviceContainer .DMInlineEditorHideOnDeviceBtn .icon {
+	position: absolute;
+	top: 10px;
+	left: 7px;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorHideOnDeviceContainer.leftSide {
+	right: auto;
+	left: -135px;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorHideOnDeviceContainer {
+	position: absolute;
+	right: -135px;
+	top: 0px;
+	z-index: 1000000002;
+	background: #FFFFFF;
+	font-family: Arial;
+	box-shadow: 0px 0px 4px #292929;
+	min-width: 100px;
+	color: #6e6e6e;
+	-moz-box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+	-webkit-box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+	box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+/* 	border: 1px solid #ccc; */
+	opacity: 0;
+	width: 135px;
+	display: none;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorDeleteBtn {
+	color: #cc3030 !important;
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne .DMInlineEditorDeleteBtn:hover {
+	background-color: #cc3030 !important;
+	color: #FFF !important;
+}
+
+.dmMobileBody .inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne {
+	width: 130px;	
+}
+
+.inlineEditorNew.inlineEditorNewContext.inlineEditorNewOne {
+	width: 130px;
+	min-width: 130px;
+	color: #6e6e6e;
+	-moz-box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+	-webkit-box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+	box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+/* 	border: 1px solid #ccc; */
+	border: none;
+	font-weight: normal;
+}
+
+.dmRowContextMenuWrap .dmRowEditorHideOnDeviceButtonsWrap:hover .dmRowEditorHideOnDeviceContainer {
+	opacity: 1;
+	display: block;
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	-ms-transition: opacity .3s ease;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuRow .dmRowEditorHideOnDeviceContainer {
+	position: absolute;
+	right: -135px;
+	top: -1px;
+	z-index: 1000000002;
+	background: #FFFFFF;
+	font-family: Arial;
+	box-shadow: 0px 0px 4px #292929;
+	min-width: 100px;
+	color: #6e6e6e;
+	-moz-box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+	-webkit-box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+	box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+	opacity: 0;
+	width: 135px;
+	display: none;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuRow .dmRowEditorHideOnDeviceContainer .dmRowEditorHideOnDeviceButton {
+	height: 33px;
+	line-height: 33px;
+	text-transform: capitalize;
+	color: #676767;
+	border-top: 1px solid #ccc;
+	padding: 5px 0 5px 25px;
+	font-size: 12px;
+	line-height: 24px;
+	position: relative;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuRow .dmRowEditorHideOnDeviceContainer .dmRowEditorHideOnDeviceButton:hover {
+	cursor: pointer;
+	color: #FFF;
+	background-color: #407ab0;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuRow .dmRowEditorHideOnDeviceContainer .dmRowEditorHideOnDeviceButton .icon {
+	position: absolute;
+	top: 10px;
+	left: 7px;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuRow.dmRowEditorHideOnDeviceButtonsWrap {
+	position: relative;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuRow.dmRowEditorHideOnDeviceButtonsWrap .arrow {
+	position: absolute;
+	right: 0px;
+	top: 12px;
+	font-size: 10px;
+}
+
+.inlineEditorLeftBar, .inlineEditorRightBar,  .inlineEditorBottomBar, .inlineEditorTopBar {
+	position: absolute;
+	width: 0px;
+	border: 1px #034281 solid;
+	z-index: 1000000000;
+	opacity:0.7;
+}
+
+.inlineEditorLeftBarNew.inlineEditorNewSelectionBarsLocked, .inlineEditorRightBarNew.inlineEditorNewSelectionBarsLocked {
+	border-left: 2px #ff6600 dashed;
+}
+
+.inlineEditorBottomBarNew.inlineEditorNewSelectionBarsLocked, .inlineEditorTopBarNew.inlineEditorNewSelectionBarsLocked {
+	border-top: 2px #ff6600 dashed;
+}
+
+.inlineEditorLeftBarNew.inlineEditorNewSelectionBarsSelected, .inlineEditorRightBarNew.inlineEditorNewSelectionBarsSelected {
+	border-left: 2px #ff6600 solid;
+}
+
+.inlineEditorBottomBarNew.inlineEditorNewSelectionBarsSelected, .inlineEditorTopBarNew.inlineEditorNewSelectionBarsSelected {
+	border-top: 2px #ff6600 solid;
+}
+
+.inlineEditorLeftBarNew, .inlineEditorRightBarNew,  .inlineEditorBottomBarNew, .inlineEditorTopBarNew{
+	position: absolute;
+	width: 0px;
+	z-index: 1000000000;
+	opacity:1;
+}
+
+.inlineEditorBarsLowZindex {
+	z-index: 99 !important;
+}
+
+.selectorOverlay{
+	position: absolute;
+	background: url(/editor/nee/images/selectedIcon.png) no-repeat top left rgba(3, 66, 129, 0.2);
+	z-index: 1000000000;
+}
+
+.inlineReachTextEditor {
+	position: absolute;
+	background-color: #5f5f5f;
+	border: 3px #bbbbbb solid;
+	border-radius: 10px;
+	-moz-border-radius : 5px;
+	width: 107px;
+	height: 470px;
+	z-index: 60;
+	opacity: 1;
+}
+
+.inlineEditorNavigationSelectedWrapper {
+	margin: 3px auto;
+}
+
+.inlineEditorEditedElementWrapper {
+	border: 2px solid #00b0f0;
+	-moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;
+	background: rgb(242,245,246); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
+	
+	-webkit-box-shadow: 2px 2px 8px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 8px 5px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 8px 5px rgba(0,0,0,0.5);
+}
+
+.inlineEditorTitleText {
+	float: left;
+	color: #666666;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 10px;
+}
+
+.inlineEditorGeneralButton {
+	border: 1px solid #00b0f0;
+	float: right;
+	height: 20px;
+	width: 20px;
+	background-color: #F7F7F7;
+	text-align: center;
+	line-height: 20px;
+	margin: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.inlineEditorGeneralButtonImage {
+	padding-top: 2px;
+	padding-left: 1px;
+}
+
+.DMInlineEditorElement {
+/*	KEEP THIS STYLE EMPTY, MANY ELEMENTS USE THIS CLASS IN ORDER TO*/
+/*	RECOGNIZE THEM AS EDITOR ELEMENTS.*/
+}
+
+.inlineEditorSavingWrapper {
+	margin: auto;
+	width: 145px;
+}
+
+.dmDrag {
+/* 	cursor: not-allowed; */
+}
+
+.draggedFrameworkInstance {
+	width: 75px;
+	height: 75px;
+	background: rgb(255,168,76); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(255,168,76) 44%, rgb(255,123,13) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(44%,rgb(255,168,76)), color-stop(100%,rgb(255,123,13))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgb(255,168,76) 44%,rgb(255,123,13) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgb(255,168,76) 44%,rgb(255,123,13) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgb(255,168,76) 44%,rgb(255,123,13) 100%); /* IE10+ */
+	background: linear-gradient(top, rgb(255,168,76) 44%,rgb(255,123,13) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 );
+	color: white;
+	text-align: center;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-bottom: 12px;
+	font-family: 'Arial Unicode MS', Arial, sans-serif;
+	font-size: 13px;
+}
+
+.draggedFrameworkInstanceImgDiv {
+	width: 52px;
+	height: 46px;
+	display: block;
+	margin: auto;
+	padding-top: 8px;
+}
+
+.draggedParagraph {
+	background: url(/editor/nee/images/inline/draggedImages/draggableParagraph.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+}
+
+.draggedImage {
+	background: url(/editor/nee/images/inline/draggedImages/draggableImage.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+}
+
+.draggedClicktocall {
+	background: url(/editor/nee/images/inline/draggedImages/draggableClick2Call.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+}
+
+.draggedClicktomap {
+	background: url(/editor/nee/images/inline/draggedImages/draggableClick2Map.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+}
+
+.draggedClicktosms {
+	background: url(/editor/nee/images/inline/draggedImages/draggableClick2Sms.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+}
+
+.draggedColumn {
+	background: url(/editor/nee/images/inline/draggedImages/draggableColumn.png);
+	background-repeat: no-repeat;
+	height: 78px;
+	width: 79px;
+}
+
+.draggedHtml {
+	background: url(/editor/nee/images/inline/draggedImages/draggableHtml.png);
+	background-repeat: no-repeat;
+	height: 78px;
+	width: 79px;
+}
+
+.draggedShare {
+	background: url(/editor/nee/images/inline/draggedImages/draggableShare.png);
+	background-repeat: no-repeat;
+	height: 78px;
+	width: 79px;
+}
+
+.draggedVideo {
+	background: url(/editor/nee/images/inline/draggedImages/draggableVideo.png);
+	background-repeat: no-repeat;
+	height: 78px;
+	width: 79px;
+}
+
+.draggedYouTube {
+	background: url(/editor/nee/images/inline/draggedImages/draggableYouTube.png);
+	background-repeat: no-repeat;
+	height: 78px;
+	width: 79px;
+}
+
+.draggedButton {
+	background: url(/editor/nee/images/inline/draggedImages/draggableButton.png);
+	background-repeat: no-repeat;
+	height: 78px;
+	width: 79px;
+}
+
+.draggedLink {
+	background: url(/editor/nee/images/inline/draggedImages/draggableLink.png);
+	background-repeat: no-repeat;
+	height: 78px;
+	width: 79px;
+}
+
+.inlineEditorDraggingPlaceHolder {
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+}
+
+.inlineEditorDraggingScrollDownIndicatorWrapper {
+	position: fixed;
+	z-index: 999999;
+	height: 40px;
+	bottom: 0px;
+	display: none;
+}
+
+.inlineEditorDraggingScrollDownIndicatorArrow {
+	width: 83px;
+	height: 30px;
+	margin: 0px auto;
+	position: relative;
+	top: 10px;
+}
+
+.inlineEditorDraggingScrollDownIndicatorBottom {
+	height: 10px;
+}
+
+.inlineEditorDraggingScrollDownIndicatorBottomInsert {
+	height: 20px;
+}
+
+.inlineEditorDraggingScrollUpIndicatorBottomInsert {
+	height: 20px;
+}
+
+.inlineEditorDraggingScrollUpIndicatorWrapperInsert {
+	position: fixed;
+	z-index: 999999;
+	height: 20px;
+	top: 0px;
+	display: none;
+}
+
+.inlineEditorDraggingScrollDownIndicatorWrapperInsert {
+	position: fixed;
+	z-index: 999999;
+	height: 20px;
+	bottom: 0px;
+	display: none;
+}
+
+.inlineEditorDraggingScrollUpIndicatorWrapper {
+	position: fixed;
+	z-index: 999999;
+	height: 40px;
+	top: 0px;
+	display: none;
+}
+
+.inlineEditorDraggingScrollUpIndicatorArrow {
+	width: 83px;
+	height: 30px;
+	margin: 0px auto;
+	position: relative;
+	top: -10px;
+}
+
+.inlineEditorDraggingScrollUpIndicatorBottom {
+	height: 10px;
+}
+
+.dmNowInlineEditing {
+    min-height: 20px;
+	outline: 0px solid transparent;
+	-webkit-nbsp-mode: normal;
+	nbsp-mode: normal;
+/* 	font-weight: normal; */
+}
+[contentEditable=false]:focus, [contentEditable=false] {
+    outline: 0px solid transparent;
+  }
+
+
+#inlineEditorLinkBar{
+	height: 16px;
+	padding:8px;
+	background: #e6e8ed;
+	border: 1px solid #69748c;
+	z-index: 9999999;
+	position: absolute;
+}
+
+.linkCloser
+{
+	background: url(/editor/nee/images/design/xGray.png) no-repeat;
+	cursor: pointer; 
+	float: right;
+	height: 23px;
+	width: 23px;
+	display: block;
+}
+
+.neeInlineMarkedElement {
+	border: 1px #e59d4c solid !important;
+}
+
+.dmNoMark, .dmNoMark * {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+.dmRespRow.dmRowHoverMark {
+/* 	outline: 1px solid #2d6598; */
+	z-index: 1;
+	box-shadow: inset 0px 0px 0px 1px #2d6598;
+	-moz-box-shadow: inset 0px 0px 0px 1px #2d6598;
+	-webkit-box-shadow: inset 0px 0px 0px 1px #2d6598;
+}
+
+.dmRespRow .dmRespColResizer {
+	width: 1px;
+	height: 100%;
+	padding: 0px 0px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 99;
+/* 	background-color: #407ab0; */
+	border-right: 1px solid #407ab0;
+    height: 100%;
+}
+
+
+/* DUDAJIRA-32436 */
+/* this file is loading faster than inline grid */
+.mobileDevice .ui-remove-handle {
+	display: none;
+}
+
+.dmRespRow .dmRespColResizer.dm-draggable {
+	cursor:col-resize;
+}
+
+.dmRespRow .dmRespColResizer:hover {
+	background:url(/editor/nee/images/common/2ColumnsArrows.png) no-repeat center 50%,
+				url(/editor/nee/images/common/bluePic.png) repeat-y center;
+	border-right: none;
+	right: -5px;
+	width: 12px;
+}
+
+body .dmRespRow[data-rule]:not(.dmforced) {
+	display: none;
+}
+
+.dmColumn  > div.divider
+{
+	margin:0px 2px;
+	width:2px;
+	padding:0px 6px;
+	
+}
+
+.dmColumn  > div.divider.dm-draggable
+{
+	cursor:col-resize;
+}
+
+.dmColumn:hover  > div.divider.dm-draggable, .dmColumn.dmLocked  > div.divider, .dmColumn.dmMultiLocked  > div.divider
+{
+	background:url(/editor/nee/images/common/2ColumnsArrows.png) no-repeat center 50%,
+				url(/editor/nee/images/common/bluePic.png) repeat-y center;
+}
+
+/* empty page placeholder */
+.dmContentPlaceholder:after {
+	content: url(/editor/nee/images/dragToEdit.png);
+}
+.dmContentPlaceholder
+{
+	text-align:center;
+}
+.dmParagraphPlaceholder,.dmTitlePlaceholder
+{
+	text-align:center;
+	color: #aaa;
+	border: 1px solid #aaa;
+	background:white;
+}
+
+.dmParagraphPlaceholder[data-dmtmpl=true] {
+	min-height: 160px;
+}
+
+.dmdmTitlePlaceholder:after
+{
+	content: 'Add Title';
+	visibility: visible;
+	position: relative;
+}
+
+.dmSliderPlaceholder:after {
+	content: '';
+	width: 100%;
+	height: 214px;
+	background-image: url(/_dm/s/rt/scripts/vendor/flexslider/theme/slideshow.png);		
+	background-size: 100% 100%;
+	visibility: visible;
+}
+.dmMenuPlaceholder
+{
+	text-align:center;
+}
+.dmMenuPlaceholder:after
+{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 144px;
+	background-image: url(/editor/nee/images/menuPlaceholder.png);
+	background-size: 100% 100%;
+	visibility: visible;
+	margin-bottom: -4px;
+}
+.dmYelp ul
+{
+	width: 278px;
+	height: 171px;
+	background: url(/editor/nee/images/clickToAdd_reviews.png) no-repeat;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.dmtabs .dmYelp ul {
+	width: 249px;
+	background-size: 249px;
+	height: 153px;
+}
+
+.dmColumn .dmYelp ul {
+	width: 110px;
+	background-size: 110px;
+	height: 67px;
+	margin: 0 auto;
+}
+
+:not(.newPhotoGallery).dmGalleryPlaceholder:after {
+    content: '';
+    height: 172px;
+    width: 100%;
+    display: block;
+    background-image: url(/editor/nee/images/imageGalleryPlace1.png);
+    background-size: 100% 100%;
+}
+
+:not(.newPhotoGallery).dmGalleryPlaceholder.dmSocialGalleryHolder:after
+{
+    content: url(/editor/nee/images/albumsGalleryPlace.jpg);
+}
+
+
+.dmGalleryPlaceholder, .dmSliderPlaceholder
+{
+	text-align:center;
+}
+.dmParagraphPlaceholder:after
+{
+	content: 'Double click to Edit or Drag here';
+	font-size: 15px;
+}
+
+
+.bodyInsideD1 .dmParagraphPlaceholder {
+	text-align: left;
+	border: 1px solid #E6E6E6;
+	background: none;
+	padding: 5px;
+	min-height: 70px;
+}
+.bodyInsideD1 .dmParagraphPlaceholder:after
+{
+	content: 'This is a paragraph. \A Writing in paragraphs can be very helpful for your visitors. This lets them find what they are looking for quickly and easily. \A Make sure your titles stand out from the rest of the text and that all your text is big enough to read.';
+	white-space: pre-wrap;
+}
+
+.bodyInsideD1 .imgTxtBtnTmpl .dmParagraphPlaceholder:after,
+.bodyInsideD1 .fullTxtBtnTmpl .dmParagraphPlaceholder:after,
+.bodyInsideD1 .fullTxtSocialTmpl .dmParagraphPlaceholder:after
+{
+	content: 'This is a paragraph. writing in paragraphs can be very helpful for your visitors. \A This lets them find what they are looking for quickly and easily. \A Make sure your titles stand out from the rest of the text and that all your text is big enough to read.';
+}
+
+
+.dmTitlePlaceholder:after
+{
+	content: 'Click to Edit Title';
+}
+
+/*------------ DUDA ONE HIGHLIGHTED TEXT ------------*/
+.inlineEditedElementHighlight:not(.menuOpen) {
+/*     box-shadow: 0 0 0 1px #ccc; */
+    outline : 2px solid rgb(56, 136, 208);
+    outline-offset:5px;
+}
+.inlineEditedElementHighlightNoBorder {
+    box-shadow: none;
+    outline:none;
+}
+
+/*------------ DUDA ONE SELECT TEXT ------------*/
+.inlineEditedElementAllowSelectText {
+	-o-user-select: text;
+	-moz-user-select: text;
+	-webkit-user-select: text;
+	user-select: text;
+	-khtml-user-select: text;
+}
+
+/*------------- DUDAONE PLACEHOLDERS ---------------*/
+.bodyInsideD1 [data-placeholder='true'] {
+    background-color: rgba(219,219,219,0.9);
+    height: 172px;
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+
+.bodyInsideD1 [data-placeholder='true'] * {
+    display: none !important;
+}
+
+.bodyInsideD1 [data-placeholder='true']:after {
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    top: 25px;
+    opacity: .5;
+    color: #595757;
+    text-shadow: none;
+    font-family: sans-serif;
+}
+
+/*.bodyInsideD1 .dmSocialHub[data-placeholder='true']:before {
+    content: "Click to add social links";
+}*/
+/*.bodyInsideD1 .dmYelp[data-placeholder='true']:before {
+    content: "Click to add Yelp reviews";
+}*/
+/*.bodyInsideD1 .dmImageSlider[data-placeholder='true']:before {
+    content: "Click to add image slider";
+}*/
+/*.bodyInsideD1 .dmRestaurantMenu[data-placeholder='true']:before {
+    content: "Click to add menu";
+}*/
+/*.bodyInsideD1 .imageWidget[data-placeholder='true']:before {
+    content: "Click to add image";
+}*/
+/*.bodyInsideD1 .dmPhotoGallery[data-placeholder='true']:before {
+    content: "Click to add gallery";
+}*/
+/*.bodyInsideD1 .dmFacebookGallery[data-placeholder='true']:before {
+    content: "Click to add Facebook albums";
+}*/
+/*.bodyInsideD1 .dmFacebookLike[data-placeholder='true']:before {
+    content: "Click to add Facebook Like button";
+}*/
+
+.bodyInsideD1 [data-placeholder='true']:before {
+    font-family: 'dm-font';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255,255,255,0.5);
+    background-image: none;
+    top: 0px;
+    position: relative;
+    visibility: visible;
+    line-height: 150px;
+    top: 30px;
+    font-size: 180px;
+}
+
+.bodyInsideD1 .dmSocialHub[data-placeholder='true']:after {
+    content: "Click to add social links";
+}
+.bodyInsideD1 .dmYelp[data-placeholder='true']:after {
+    content: "Click to add Yelp reviews";
+}
+.bodyInsideD1 .dmImageSlider[data-placeholder='true']:after {
+    content: "Click to add image slider";
+}
+.bodyInsideD1 [dmle_extension="internal_blog_list"][data-placeholder='true']:after {
+	content: "Click to add posts";
+}
+.bodyInsideD1 [dmle_extension="disqus"][data-placeholder='true']:after {
+	content: "Click to add Disqus comments";
+}
+.bodyInsideD1 .dmRestaurantMenu[data-placeholder='true']:after {
+    content: "Click to add menu";
+}
+.bodyInsideD1 .imageWidget[data-placeholder='true']:after {
+    content: "Click to add image";
+}
+.bodyInsideD1 .dmPhotoGallery[data-placeholder='true']:after {
+    content: "Click to add gallery";
+}
+.bodyInsideD1 .dmFacebookGallery[data-placeholder='true']:after {
+    content: "Click to add Facebook albums";
+}
+.bodyInsideD1 .dmFacebookLike[data-placeholder='true']:after {
+    content: "Click to add Facebook Like button";
+}
+/*------------- END DUDAONE PLACEHOLDERS ---------------*/
+
+.dmAdCloseButton:hover {
+	background: url(/editor/nee/images/newSlideEditor/xHover_small.png) no-repeat;
+}
+
+.dmAdCloseButton {
+	background: url(/editor/nee/images/newSlideEditor/x_small.png) no-repeat;
+	cursor: pointer;
+	height: 17px;
+	width: 17px;
+	position: absolute;
+	right: 8px;
+	top: 2px;
+}
+
+.dmMobileFooterCloseButton {
+	background: url(/editor/nee/images/newSlideEditor/x_small.png) no-repeat;
+	cursor: pointer;
+	height: 17px;
+	width: 17px;
+	position: absolute;
+	right:8px;
+}	
+
+.dmMobileFooterCloseButton:hover {
+	background: url(/editor/nee/images/newSlideEditor/xHover_small.png) no-repeat;
+}
+
+.dmDrakedElement {
+	background: url(/editor/nee/images/darkenScreenBackground.png);
+	background-repeat: repeat;
+	z-index: 99999;
+	display: none;
+	position: absolute;
+}
+
+.dmTransedLayoutElement {
+	background: url(/editor/nee/images/TransScreenBackground.png);
+	background-repeat: repeat;
+	z-index: 999999;
+	display: none;
+	position: absolute;
+}
+
+.dmDropAreasText {
+	color: white;
+	width: 100%;
+	margin: auto;
+	display: block;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	height: 55px;
+	position: relative;
+	font-family: Arial;
+}
+
+#dm .dmNav.dmNavCustom .dmHideFromNav
+{
+	display:none !important;
+}
+
+#dm .dmn .dmHideFromNav, #dm .dmn .dmNavSystemHidden
+{
+	display:none !important;
+}
+
+.dmExpandableNav.dmNavCustom .dmHideFromNav
+{
+	display:none !important;
+}
+
+.dmPhotoGallery
+{
+	min-height: 70px;
+	position: relative;
+	height: inherit;
+   
+}
+.bodyInsideD1 .dmPhotoGallery {
+	 width: 100%;
+}
+
+.dmPhotoGallery .dmHideFromNav 
+{
+	display: none !important;
+}
+
+/* Show blur Premium features*/
+
+.dmEmulatorFree .dmCall,
+.dmEmulatorFree .dmAdsense,
+.dmEmulatorFree .dmSmsInfo ,
+.dmEmulatorFree .dmSms ,
+.dmEmulatorFree .dmMap,
+.dmEmulatorFree .dmopentable,
+.dmEmulatorFree .dmPayPalButton,
+.dmEmulatorFree .dmGoogleCheckoutButton,
+.dmEmulatorFree .dmRestaurantMenu,
+.dmEmulatorFree .dmYelp
+{
+/* 	background:url(/editor/nee/images/emulatorPremium/removedRibbon.png) no-repeat -3px 50% #CCCCCC !important;	 */
+	position:relative;
+}
+.dmEmulatorFree .dmCall:after,
+.dmEmulatorFree .dmAdsense:after ,
+.dmEmulatorFree .dmSmsInfo:after ,
+.dmEmulatorFree .dmSms:after ,
+.dmEmulatorFree .dmMap:after,
+.dmEmulatorFree .dmopentable:after,
+.dmEmulatorFree .dmPayPalButton:after,
+.dmEmulatorFree .dmGoogleCheckoutButton:after,
+.dmEmulatorFree .dmRestaurantMenu:after,
+.dmEmulatorFree .dmYelp:after
+{
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANklEQVQYV2NkwAPS0tL+M+KSB0nOmjWLEasCmCRIM4YCZEkMBeiSKAqwScIV4JIEK8AnCVIAAKymHjpMdc94AAAAAElFTkSuQmCC) repeat rgba(100, 100, 100, 0.5) !important;
+	content:'Removed';
+	color:#FF9D00;
+	font-size:21px;
+	font-weight:bold;
+	text-shadow: 1px 1px 2px #444;
+	position: absolute;
+	top: 0;
+	left:0;
+	display: block;
+	text-align: center;
+	width: 100%;
+	padding: 3px;
+	margin: -3px;
+	height: 100%;
+}
+
+.dmEmulatorFree .dmAdsense:after 
+{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.dmEmulatorFree .dmCall .iconBg, .dmEmulatorFree .dmCall .icon, .dmEmulatorFree .dmCall .text,
+.dmEmulatorFree .dmSmsInfo .iconBg, .dmEmulatorFree .dmSmsInfo .icon, .dmEmulatorFree .dmSmsInfo .text,
+.dmEmulatorFree .dmSms .iconBg, .dmEmulatorFree .dmSms .icon, .dmEmulatorFree .dmSms .text,
+.dmEmulatorFree .dmMap .iconBg, .dmEmulatorFree .dmMap .icon, .dmEmulatorFree .dmMap .text,
+.dmEmulatorFree .dmopentable .iconBg, .dmEmulatorFree .dmopentable .icon, .dmEmulatorFree .dmopentable .text,
+.dmEmulatorFree .dmAdsense .dmad_title, .dmEmulatorFree .dmAdsense .dmad_subtitle 
+{
+	opacity:0.3 !important;
+}
+.dmEmulatorFree .dmPayPalButton form,
+.dmEmulatorFree .dmGoogleCheckoutButton form,
+.dmEmulatorFree .dmRestaurantMenu ul,
+.dmEmulatorFree .dmYelp > div
+{
+	opacity:0.5 !important;	
+}
+
+.dmEmulatorFree  .dmAdCloseButton {
+	display:none;
+}
+
+.dmEmulatorFreeDarken {
+	position:absolute;
+	color:white;
+	font-size:20px;
+	font-family: Arial; 
+}
+.dmEmulatorPremiumDarken {
+	position:absolute;
+	color:white;
+	font-size:20px;
+	font-family: Arial; 
+
+}
+
+/*End  Show blur Premium features*/
+
+
+
+
+/* emulator premium messages */
+
+.ui-tooltip-dm-ads-msg {
+    z-index: 1000001 !important;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #ee9130;
+    max-width: 400px;
+}
+
+.ui-tooltip-dm-footer-msg {
+    z-index: 1000001 !important;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.ui-tooltip-dm-footer-msg .ui-tooltip-content, .ui-tooltip-dm-ads-msg .ui-tooltip-content 
+{
+	background: #ee9130;
+	background: -moz-linear-gradient(top,  #ee9130 0%, #e66a0e 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee9130), color-stop(100%,#e66a0e));
+	background: -webkit-linear-gradient(top,  #ee9130 0%,#e66a0e 100%);
+	background: -o-linear-gradient(top,  #ee9130 0%,#e66a0e 100%);
+	background: -ms-linear-gradient(top,  #ee9130 0%,#e66a0e 100%);
+	background: linear-gradient(top,  #ee9130 0%,#e66a0e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee9130', endColorstr='#e66a0e',GradientType=0 );
+	color:white;
+	font-size: 18px;
+	text-align: center;
+	padding:8px 0;
+	border-color: white;
+}
+
+.layoutInlineEditorTop {
+	position: fixed;
+}
+
+.layoutInlineEditorBottom {
+	position: fixed;
+}
+
+.layoutInlineEditorLeft {
+	position: fixed;
+}
+
+.layoutInlineEditorRight {
+	position: fixed;
+}
+
+.dmLockedNew {
+	cursor: move;
+}
+
+.dmMarkedAsDragged {
+	cursor: move;
+}
+
+.dmSocialHubPlaceholder
+{
+	text-align:center;
+}
+
+.dmSocialHubPlaceholder:after
+{
+    content: url(/editor/nee/images/socialHubPlaceholder.png);
+	visibility: visible;
+}
+
+.dmRowEditor {
+	position: absolute;
+	pointer-events: none;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	z-index: 1000000003 !important;
+	-webkit-transition: opacity .2s ease;
+	-moz-transition: opacity .2s ease;
+	-o-transition: opacity .2s ease;
+	-ms-transition: opacity .2s ease;
+}
+.dmRowEditor * {
+    pointer-events: auto;
+}
+
+
+/* .dmRespRow.dmPlaceHolderRespRow .dmRespCol.neeInlineMarkedElement {
+	height: 100px;
+ 	background-image: url(/editor/dudaone/images/inline/drop-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% calc(50% + 20px);
+}
+ */
+.dmRespRow.dmPlaceHolderRespRow {
+	font-size: 16px !important;
+	padding: 5px 0 !important;
+}
+
+.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol.dmRespColEmptyPlaceHolder.neeInlineMarkedElement:before, 
+body:not(.dmDudaonePreviewBody) .dmRespRow:not(.dmDraggedDomElement):hover .dmRespColEmptyPlaceHolder:before {
+	content: '';
+	text-align: center;
+	position: absolute;
+	display: block;
+	background-color: #ececec;
+	outline: 1px dashed #bebdbd;
+ 	background-image: url(/editor/dudaone/images/inline/drop-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% -webkit-calc(50% + 15px);
+	background-position: 50% calc(50% + 15px);
+	width: 90%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.dmRespRow .dmRespCol.dmRespColEmptyPlaceHolder.neeInlineMarkedElement:after,  
+body:not(.dmDudaonePreviewBody) .dmRespRow:not(.dmDraggedDomElement):hover .dmRespColEmptyPlaceHolder:after{
+	content: "Empty Column";
+	color: #a0a0a0;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	display: block;
+	top: -webkit-calc(50% - 30px);
+	top: calc(50% - 30px);
+	left: 0px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.dmRespRow.dmPlaceHolderRespRow .dmRespCol:before, .dmRespRow.dmPlaceHolderRespRow:hover .dmRespCol:before {
+	content: "New Row";
+	position: absolute;
+	left: -webkit-calc(50% - 35px);
+	left: calc(50% - 35px);
+	top: -webkit-calc(50% - 8px);
+	top: calc(50% - 8px);
+	display: block;
+}
+.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol.dmRespColEmptyPlaceHolder .dmPasteButton {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	background: #a0a0a0;
+	color: #ececec;
+	height: 30px;
+	line-height: 30px;
+	width: 50px;
+	cursor: pointer;
+	top: -webkit-calc(50% + 50px);
+	left: -webkit-calc(50% - 25px);
+	top: calc(50% + 50px);
+	left: calc(50% - 25px);
+}
+.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol.dmRespColEmptyPlaceHolder .dmPasteButton.dmPasteButtonLeft {
+	top: -webkit-calc(50% - 4px);
+	left: -webkit-calc(20% - 20px);
+	top: calc(50% - 4px);
+	left: calc(20% - 20px);
+}
+.dmRespRow.dmPlaceHolderRespRow.dmPlaceHolderRespRowSingleChild .dmRespCol {
+	height: 60px !important;
+}
+
+.dmRespRow.dmPlaceHolderRespRow .dmRespCol {
+	padding: 0px;
+	position: relative;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	text-align: center;
+	height: 20px;
+	color: #a0a0a0;
+	opacity: 0;
+	font-family: Arial !important;
+	font-size: 14px !important;
+	background-color: #ececec;
+	outline: 1px dashed #bebdbd;
+}
+
+.dmRespEditorDelButton {
+
+}
+
+.dmRowEditorOverlay {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: rgba(255, 255, 255, 0.3);
+	pointer-events: none;
+}
+
+.dmRespRowWithEditor {
+/* 	background: rgba(0, 0, 0, 0.3); */
+	-webkit-transition: background .5s ease;
+	-moz-transition: background .5s ease;
+	-o-transition: background .5s ease;
+	-ms-transition: backgroundm .5s ease;
+}
+.dmRowEditorResizer {
+	position: absolute;
+	height: 10px;
+	width: 100%;
+	cursor: ns-resize;
+	z-index: 200;
+}
+.dmMobileBody .dmRowEditorResizerHeader {
+	margin-top: 10px
+}
+.dmRowEditor .dmRowEditorDeleteButton {
+	float: left;
+	width: 20px;
+	height: 20px;
+	font-size: 15px;
+	cursor: pointer;
+	line-height: 28px;
+	margin-left: 7px;
+	color: #666;
+}
+
+.dmRowEditor .dmRowEditorDeleteButton:hover {
+	color: #407ab0;
+}
+
+.dmRowEditor > .dmRowEditorButton {
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	color: #FFF;
+	cursor: pointer;
+	line-height: 25px;
+	font-size: 15px;
+	background-color: #80a2c1;
+/* 	box-shadow: inset 0 1px 1px rgba(255,255,255,.5), 0px 0px 0px #888; */
+}
+
+.dmRowEditor .dmRowEditorButton:hover {
+	background-color: #407ab0;
+}
+
+.dmRowEditor .dmRowEditorButton.dmRowEditorChangeBGButton {
+	width: auto;
+	display: none;
+	font-size: 13px;
+	padding: 0px 5px;
+	margin: 0px 3px;
+}
+
+.dmRowEditor .dmRowEditorButton.dmRowEditorDeleteRowButton {
+/* 	display: none; */
+	font-size: 12px;
+	margin-left: 3px;
+	color: #FFF;
+	background-color: #E08282;
+	padding-top: 1px;
+	padding-left: 1px;
+}
+
+.dmRowContextMenuWrap .dmRowEditorButton.dmRowEditorAddColumnButtonDisabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.dmRowEditor .dmRowEditorButton.dmRowEditorDeleteRowButton:hover {
+	background-color: #cc3030;
+}
+
+.dmDudaOneEditRuleBody .dmRowEditor .dmRowEditorButton.dmRespEditorMenuButton,
+.dmDudaOneEditRuleBody .dmRowContextMenuWrap .dmRowContextMenuRow:hover,
+.dmDudaOneEditRuleBody .dmRowEditor > .dmRowEditorButton,
+.dmDudaOneEditRuleBody .dmRowEditor .dmRowEditorButton:hover {
+    background-color: #FC7118 !important;
+}
+.dmDudaOneEditRuleBody .dmRespRow.dmRowHoverMark {
+    box-shadow: inset 0px 0px 0px 2px #FC7118 !important;
+    -moz-box-shadow: inset 0px 0px 0px 2px #FC7118 !important;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #FC7118 !important;
+}
+
+.dmRowEditor .dmRowEditorButton.dmRespEditorMenuButton {
+	font-size: 13px;
+	padding: 0px 5px;
+	background-color: #407ab0;
+	width: 60px;
+	opacity: 0.8;
+	margin-right: 3px;
+ 	-webkit-transition: all .2s ease; 
+ 	-moz-transition: all .2s ease; 
+ 	-o-transition: all .2s ease; 
+ 	-ms-transition: all .2s ease; 
+}
+.dmRowEditor .dmRowEditorButton.dmRespEditorMenuButton:hover, .dmRowEditor.dmRowEditorOpen .dmRowEditorButton.dmRespEditorMenuButton {
+	width: 102px;
+	opacity: 1;
+}
+
+.dmRowEditor .dmRowEditorButton.dmRespEditorMenuButton .text {
+	display: inline-block;
+}
+
+.dmRowEditor .dmRowEditorButton.dmRespEditorMenuButton .arrow {
+	font-size: 10px;
+	width: 20px;
+	height: 25px;
+	line-height: 25px;
+	display: inline-block;
+	float: right;
+}
+
+.dmRowEditor .dmRowEditorButton.dmRespEditorSettingsButton {
+	margin-left: 3px;
+	display: none;
+}
+
+.dmRowEditor .dmRowEditorButton.dmRespEditorSettingsButton.dmRowEditorButtonActive {
+	background: #407ab0;
+}
+
+.dmRowEditor .dmRowEditorButton.dmRowEditorMoveButton {
+/* 	position: absolute; */
+/* 	background-image: url("/editor/nee/images/common/dragDuda1.png"); */
+/* 	box-shadow: 0 1px 1px rgba(0,0,0,0.2); */
+/* 	background-repeat: no-repeat; */
+/* 	background-position: 50%; */
+	cursor: move;
+	z-index: 1000000001;
+	display: none;
+	margin-left: 0px;
+/* 	-webkit-transition: all .2s ease; */
+/* 	-moz-transition: all .2s ease; */
+/* 	-o-transition: all .2s ease; */
+/* 	-ms-transition: all .2s ease; */
+}
+
+
+.dmRowEditor:hover .dmRowEditorButton.dmRespEditorMenuButton {
+	opacity: 1;
+}
+
+.dmRespColWidthTrans {
+	-webkit-transition: width .4s cubic-bezier(.25,1,.25,1);
+	-moz-transition: width .4s cubic-bezier(.25,1,.25,1);
+	-o-transition: width .4s cubic-bezier(.25,1,.25,1);
+	-ms-transition: width .4s cubic-bezier(.25,1,.25,1);
+}
+.bodyInsideD1 .neeInlineMarkedElement {
+	border: 0px rgb(61,133,164) solid !important;
+}
+
+.bodyInsideD1 .neeInlineMarkedElement.dmRespColEmptyPlaceHolder, .bodyInsideD1 .dmPlaceHolderRespRow .dmRespCol.neeInlineMarkedElement {
+	border: 0px rgb(61,133,164) solid !important;
+}
+
+.dmRespColEmptyPlaceHolder.neeInlineMarkedElement, .dmRespRow.dmPlaceHolderRespRow .dmRespCol.neeInlineMarkedElement {
+	
+}
+
+.dmRespColEmptyPlaceHolder {
+	-webkit-transition: background-color .5s ease;
+	-moz-transition: background-color .5s ease;
+	-o-transition: background-color .5s ease;
+	-ms-transition: background-color .5s ease;
+	
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Arial !important;
+	color: #83888c;
+	font-weight: bold;
+	font-size: 15px !important;
+	
+/* 	border: 2px #cde8ff solid; */
+}
+
+.dmRespColEmptyPlaceHolderNotify {
+	-webkit-transition: background-color .5s ease;
+	-moz-transition: background-color .5s ease;
+	-o-transition: background-color .5s ease;
+	-ms-transition: background-color .5s ease;
+}
+
+body.bodyInsideNee:not(.dmDudaonePreviewBody) .poweredByWrapper.hideInEditor {
+  	display:none;
+}
+
+body.bodyInsideNee.touchDevice .poweredByWrapper.hideInEditor {
+  	display:none;
+}
+
+body.bodyInsideNee:not(.dmDudaonePreviewBody) .hideInEditor {
+  	display:none;
+}
+
+*[dmle_extension]:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.dmRowEditorBar {
+	position: absolute;
+/* 	background: #407ab0; */
+	background: #474647;
+	z-index: 1000000000;
+}
+
+.dmRowEditorTopBar {
+	height: 1px;
+}
+
+.dmRowEditorBottomBar {
+	height: 1px;
+}
+
+.dmRowEditorLeftBar {
+	width: 1px;
+}
+
+.dmRowEditorRightBar {
+	width: 1px;
+}
+
+.rowEditorBorderShadow {
+
+}
+
+.dmContextMenuOuterWrap {
+	position: absolute;
+	z-index: 1000000002;
+	background: #FFFFFF;
+	font-family: Arial;
+	min-width: 100px;
+	color: #6e6e6e;
+	-moz-box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+	-webkit-box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+	box-shadow: 0 2px 6px rgba(101, 101, 101, 0.2);
+/* 	border: 1px solid #ccc; */
+}
+
+.dmRowContextMenuWrap {
+	width: 130px;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuRow {
+	height: 33px;
+	line-height: 33px;
+	text-transform: capitalize;
+/* 	padding: 0px 5px; */
+/* 	border-top-width: 1px; */
+/* 	border-top-style: solid; */
+/* 	border-top-color: rgb(218, 218, 218); */
+	color: #676767;
+	border-top: 1px solid #ccc;
+	padding: 5px 0 5px 15px;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: left;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuRow:hover {
+	background-color: #407ab0;
+	color: #fff;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuRow.dmRowContextMenuDeleteRow {
+	color: #cc3030;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuRow.dmRowContextMenuDeleteRow:hover {
+	background-color: #cc3030;
+	color: #fff;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuChangeColsRow {
+	height: 25px;
+	line-height: 25px;
+	text-transform: capitalize;
+	font-size: 12px;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuTitle {
+	font-size: 11px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: rgb(41, 101, 152);
+	height: 25px;
+	line-height: 25px;
+	padding: 0px 5px;
+	text-transform: uppercase;
+	border: 0px;
+}
+
+.dmRowContextMenuWrap .dmRowContextChangeColsTitle {
+	font-size: 11px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: #FFF;
+	height: 25px;
+	line-height: 25px;
+	border: 0px;
+	color: #676767;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuColChange {
+	float: left;
+	text-align: center;
+	line-height: 25px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	color: #407ab0;
+	background-color: #e9e7e7;
+	cursor: pointer;
+	border: 1px solid rgba(107,112,117,.31);
+	box-shadow: inset 0 1px 1px rgba(255,255,255,.5), 0px 0px 0px #888;
+}
+
+.dmRowContextMenuWrap .dmRowContextMenuColChange:hover, .dmRowContextMenuWrap .dmRowContextMenuColChange.dmRowEditorButtonCurrent {
+	color: #FFF;
+	background-color: #407ab0;
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.dmRowContextMenuWrap .dmRowEditorButton {
+	cursor: pointer;
+}
+
+#dmRowEditorAnchorRowButton {
+	position: relative;
+}	
+
+#dmRowEditorAnchorRowButton .icon-anchor {
+	font-size: 14px;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+
+
+.inlineEditorBottomBarNew.inlineEditorNewSelectionBarsSelected.inlineEditorBottomBarNewOne, .inlineEditorTopBarNew.inlineEditorNewSelectionBarsSelected.inlineEditorTopBarNewOne {
+	border: none;
+	border-top: 1px #407ab0 dashed;
+	height: 1px !important;
+/* 	background-image: url("/editor/dudaone/images/inline/dudaone_selection_anim.gif"); */
+	background-repeat: repeat;
+}
+
+.inlineEditorLeftBarNew.inlineEditorLeftBarNewOne.inlineEditorNewSelectionBarsLocked, .inlineEditorRightBarNew.inlineEditorRightBarNewOne.inlineEditorNewSelectionBarsLocked {
+	border-left: 1px #407ab0 dashed;
+}
+
+.inlineEditorBottomBarNew.inlineEditorBottomBarNewOne.inlineEditorNewSelectionBarsLocked, .inlineEditorTopBarNew.inlineEditorTopBarNewOne.inlineEditorNewSelectionBarsLocked {
+	border-top: 1px #407ab0 dashed;
+}
+
+.inlineEditorBottomBarNew.inlineEditorNewSelectionBarsSelected.inlineEditorBottomBarNewOne {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.inlineEditorLeftBarNew.inlineEditorNewSelectionBarsSelected.inlineEditorLeftBarNewOne, .inlineEditorRightBarNew.inlineEditorNewSelectionBarsSelected.inlineEditorRightBarNewOne {
+	border: none;
+	width: 1px !important;
+	border-left: 1px #407ab0 dashed;
+/* 	background-image: url("/editor/dudaone/images/inline/dudaone_selection_anim_ver.gif"); */
+	background-repeat: repeat;
+}
+
+.inlineEditorLeftBarNew.inlineEditorNewSelectionBarsSelected.inlineEditorLeftBarNewOne {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.dmDraggedDomElementScaled {
+	position: absolute;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+	-ms-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+}
+
+.dmDraggedDomElement {
+	-webkit-transition: -webkit-transform .4s ease;
+	-moz-transition: -moz-transform .4s ease;
+	-ms-transition: -ms-transform .4s ease;
+	transition: transform .4s ease;
+	background: rgba(0,0,0,0.1);
+	pointer-events: none;
+	z-index: 999999999 !important;
+	
+}
+
+.inlineEditorDraggingScrollDownIndicatorWrapper {
+	
+}
+
+.dmDragAndDropPlaceHolder, .bodyInsideD1 .neeInlineMarkedElement.dmDragAndDropPlaceHolder  {
+	position: relative;
+	z-index: 10000;
+	width: 100%;
+	height: 10px;
+	margin: 2px 0;
+	padding: 0;
+	-webkit-transition: background-color .5s ease !important;
+	-moz-transition: background-color .5s ease !important;
+	-o-transition: background-color .5s ease !important;
+	-ms-transition: background-color .5s ease !important;
+	text-align: center !important;
+	text-transform: capitalize !important;
+	font-family: Arial !important;
+	color: #83888c !important;
+	font-weight: bold !important;
+	font-size: 15px !important;
+	background-color: none !important;
+	border: 0;
+	clear:both;
+}
+.dmRespColEmptyPlaceHolder .dmDragAndDropPlaceHolder {
+	width: 80% !important;
+	margin: 2px 10% !important;
+	top: 6%;
+	position: absolute !important;
+}
+.dmDragAndDropPlaceHolder.dmRespRow {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0 !important;
+}
+.dmDragAndDropPlaceHolder:before {
+	border-bottom: 2px groove #1dabf0;
+	top: 4px;
+	display: block;
+    position: absolute;
+	width: 90%;
+	left: 5%;
+	content:'';
+}
+.dmDragAndDropPlaceHolder:after {
+	border-right: 2px groove #1dabf0;
+	border-left: 2px groove #1dabf0;
+	height: 10px;
+	top: 0px;
+	display: block;
+    position: absolute;
+	width: 90%;
+	left: 5%;
+	content:'';
+}
+
+/* PLACEHOLDER STYLING */
+
+/* General */
+div.placeholder {
+    background-color: rgba(255,255,255,.92);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: none;
+    pointer-events: none;
+}
+div.placeholder table.inner {
+    width: 100%;
+    height: 100%;
+}
+div.placeholder table.inner td {
+    vertical-align: middle;
+}
+div.placeholder span.icon {
+    color: #9D9C9C;
+    display: block;
+    font-size: 5.2em;
+    line-height: 1em;
+    text-align: center;
+    width: 100%;
+}
+div.placeholder p.text {
+    color: #3B75A4;
+    display: block;
+    font-size: 0.9em;
+    margin: -20px 0 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+div.placeholder div.actions {
+    text-align: center;
+    width: 100%;
+}
+div.placeholder div.actions > a {
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    transition: all 0.15s;
+    border-radius: 2px;
+    background-clip: padding-box;
+    background-color: #407ab0;
+    color: #fff;
+    padding: 0px 16px 1px;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.8em;
+    cursor: pointer;
+    min-width: 100px;
+    pointer-events: all;
+}
+div.placeholder  div.actions a.url {
+    font-size: 0.9em;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+/* General Small */
+div.placeholder.small table.inner{
+    width: auto;
+    margin: 0 auto;
+}
+div.placeholder.small p.text{
+    margin: 0;
+}
+div.placeholder.small span.icon {
+    float: left;
+    font-size: 95px;
+    height: 80px;
+    width: 90px;
+    line-height: 77px;
+    margin-right: 14px;
+}
+div.placeholder.small div.group {
+    float: right;
+    padding-right: 22px;
+}
+div.placeholder.small div.actions > a {
+    margin: 0 3px;
+}
+
+/* Paragraph Placeholder */
+div.placeholder.paragraphPlaceholder {
+    background-color: transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: none;
+}
+div.paragraphPlaceholder div.actions {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 62px;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    width: 102px;
+}
+div.paragraphPlaceholder.small div.actions {
+    height: 28px;
+    width: 100%;
+}
+div.paragraphPlaceholder div.actions > a.edit {
+    margin: 0 0 10px;
+}
+div.paragraphPlaceholder div.actions > a.import {
+    margin: 0;
+}
+
+div.paragraphPlaceholder div.actions > a.more {
+	margin: 0;
+	margin-top: 10px;
+	width: 25px;
+	min-width: 25px;
+	padding: 0px 0px 0px 3px;
+	height: 26px;
+	position: relative;
+	top: 1px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+div.paragraphPlaceholder.small div.actions > a.edit {
+    margin: 0 4px;
+}
+div.paragraphPlaceholder.small div.actions > a.import, div.paragraphPlaceholder.small div.actions > a.more {
+    margin: 0 4px;
+}
+div.paragraphPlaceholder ~ * {
+    opacity: 0.5;
+}
+div.paragraphPlaceholder:hover ~ * {
+    opacity: 0.7;
+}
+
+/* Image Placeholder */
+div.imagePlaceholder:hover {
+    background-color: rgba(147,147,147,.92);
+    transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -webkit-transition: all 0.15s;
+}
+div.imagePlaceholder div.inner {
+    position: absolute;
+    top: calc(50% - 70px);
+    left: calc(50% - 70px);
+}
+div.imagePlaceholder p.text {
+    color: #727272;
+    margin-top: -10px;
+    line-height: 1.2em
+}
+div.imagePlaceholder:hover p.text {
+    color: #fff;
+}
+#dm div.imagePlaceholder span.icon {
+    color: #dbdbdb;
+    font-size: 70px;
+    width: 140px;
+    line-height: 1.2em;
+    position: relative;
+}
+#dm div.imagePlaceholder span.icon:after {
+    content: "";
+    background-color: #fff;
+    width: 56px;
+    height: 40px;
+    position: absolute;
+    z-index: -1;
+    left: calc(50% - 28px);
+    top: calc(50% - 28px);
+}
+div.imagePlaceholder span.subText {
+    font-weight: normal;
+}
+
+div.imagePlaceholder div.actions a.import:hover {
+    background-color: #5e8cb2;
+}
+
+div.placeholder div.actions > a.delete {
+	background-color: #cc3030;
+	width: 27px;
+	min-width: 20px;
+	padding-left: 7px;
+}
+
+/* /PLACEHOLDER STYLING */
+
+
+
+
+/* Hidden Element */
+.displayHidden-outer{
+    /*position: relative;
+    z-index: 1;*/
+}
+.displayHidden{
+    /*background: #fff;*/
+    cursor: pointer;
+    opacity: 0.7;
+
+    position: relative;
+    border:2px solid #5b5b5b;
+    width: 100%;
+
+/*    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;*/
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    z-index: 999;
+
+
+    background-size: 20px 20px;
+    box-shadow: 1px 1px 8px gray;
+
+	background-color: #f3f3f3;
+    /* background-image: linear-gradient(-45deg, white 45%, gray 25%, gray 25%, white 50%, white 95%, gray 5%, white);*/
+
+}
+
+
+.displayHidden .displayHiddenIcon{
+    color: #9e9e9e;
+    font-size: 40px;
+    left:0;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+}
+
+
+.displayHidden-inner{
+    position: relative;
+    width: 100%;
+}
+.displayHidden-inner > div {
+    width: 100%;
+}
+
+.orangeBtn{
+/*     background-color: #FD711A; */
+/*     border-left: 0 none; */
+/*     border-radius: 3px 3px 3px 3px; */
+/*     color: #FFFFFF; */
+/*     font-size: 1em; */
+/*     height: auto; */
+/*     line-height: 1.6em; */
+/*     margin-top: 4px; */
+/*     padding: 2px 50px; */
+}
+
+/*
+
+.confirmBoxOuter{
+    background-color: #ededed;
+    border: 1px solid #9f9f9f;
+    font-family: helvetica-light, helvetica;
+    padding: 2px 3px;
+
+    -moz-border-radius: 3px;
+    -webkit-border: 3px;
+    border-radius: 3px;
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+
+    z-index: 65555;
+
+}
+
+.confirmBoxOuter.outer:before{
+    background-color: #ededed;
+    border: 1px solid #9f9f9f;
+    content: '';
+    width: 30px;
+    position: absolute;
+    top: calc(100% - 20px);
+    left: calc(50% - 15px);
+    height: 30px;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+
+    -moz-border-radius: 3px;
+    -webkit-border: 3px;
+
+    z-index: 65554;
+}
+
+.confirmBoxOuter.outer:after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background: red;
+    top: calc(100% - 21px);
+    left: calc(50% - 15px);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    border-radius: 3px;
+    z-index: 65556;
+}
+
+.confirmBoxOuterInner{
+    height: 100%;
+    position: absolute;
+    z-index: 65560;
+}
+
+
+#unHideConfirm{
+    height: 50px;
+    width: 150px;
+}
+
+#unHideConfirm  span.text{
+    color: #474647;
+    font-size: 14px;
+    margin: 13px 5px;
+    display: block;
+    float: left;
+}
+
+
+#unHideConfirm  button{
+    color: #fff;
+    background-color: #fd7119;
+
+    font-size: 14px;
+
+    height: 25px;
+    margin: 8px 5px;
+    padding: 2px 19px 2px 14px;
+    width: 53px;
+
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+#unHideConfirm #unHideConfirm-close{
+    cursor: pointer;
+    color: #606060;
+    float: right;
+    font-size: 6px;
+    margin: 2px;
+    float: right;
+}
+
+.hiddenOverAllCover{
+    background: none repeat scroll 0 0 black;
+    content: " ";
+    height: 1200px;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+*/
+
+div.confirmBoxOuter{
+
+	 height: 50px;
+	 width: 150px;
+
+	 position: absolute;
+
+	 background-color: #ededed;
+	 border: 1px solid #9f9f9f;
+	 font-family: helvetica-light, helvetica;
+	 font-size: 14px;
+	 padding: 2px 3px;
+
+	 -moz-border-radius: 3px;
+	 -webkit-border: 3px;
+	 border-radius: 3px;
+
+	 -moz-background-clip: padding;
+	 -webkit-background-clip: padding-box;
+	 background-clip: padding-box;
+
+	 -moz-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+	 -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+	 box-shadow: 0 2px 6px rgba(0,0,0,.25);
+
+	 z-index: 65555;
+ }
+
+.touchDevice div.confirmBoxOuter#unHideConfirmWraper {
+	height: 55px;
+	width: 197px;
+}
+
+div.confirmBoxOuter:before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+
+    background-color: #ededed;
+    border: 1px solid #9f9f9f;
+
+    top: calc(100% - 20px);
+    left: calc(50% - 15px);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    border-radius: 3px;
+    z-index: -1;
+
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+
+div.confirmBoxOuter:after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    position: absolute;
+
+    top: calc(100% - 21px);
+    left: calc(50% - 15px);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    border-radius: 3px;
+    z-index: 1;
+
+    background-color: #ededed;
+    border: 1px solid #9f9f9f;
+
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+
+}
+
+div.confirmBoxOuter.below:after{
+	top: calc(100% - 56px);
+}
+
+div.confirmBoxOuterInner{
+  z-index: 2;
+   position: absolute;
+    background-color: #ededed;
+    height: 46px;
+    width: 140px;
+}
+
+.touchDevice #unHideConfirmWraper div.confirmBoxOuterInner{
+	height: 50px;
+	width: 190px;
+}
+
+#unHideConfirmWraper  span.text{
+    color: #474647;
+    font-size: 14px;
+    margin: 13px 1px 13px 9px;
+    display: block;
+    float: left;
+}
+
+.touchDevice #unHideConfirmWraper  span.text{
+	font-size: 18px;
+	margin: 13px 5px 13px 9px;
+}
+
+#unHideConfirmWraper  button{
+    color: #fff;
+    background-color: #fd7119;
+
+    font-size: 14px;
+
+    height: 25px;
+    margin: 8px 5px;
+    padding: 2px 19px 2px 14px;
+    width: 53px;
+
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.touchDevice #unHideConfirmWraper  button{
+	font-size: 18px;
+	height: 33px;
+	width: 60px;
+}
+
+#unHideConfirmWraper #unHideConfirm-close{
+    cursor: pointer;
+    color: #606060;
+    float: right;
+    font-size: 6px;
+    margin: 2px;
+    float: right;
+}
+
+.touchDevice #unHideConfirmWraper #unHideConfirm-close{
+	font-size: 18px;
+	margin: 5px;
+}
+
+div.confirmBoxOuter{
+
+    height: 50px;
+
+    position: absolute;
+
+    background-color: #ededed;
+    border: 1px solid #9f9f9f;
+    font-family: helvetica-light, helvetica;
+    font-size: 14px;
+    padding: 2px 3px;
+
+    -moz-border-radius: 3px;
+    -webkit-border: 3px;
+    border-radius: 3px;
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+
+    z-index: 9999999999;
+}
+
+div.confirmBoxOuter:before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+
+    background-color: #ededed;
+    border: 1px solid #9f9f9f;
+
+    top: calc(100% - 20px);
+    left: calc(50% - 15px);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    border-radius: 3px;
+    z-index: -1;
+
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+
+div.confirmBoxOuter.below:before{
+	display:none;
+}
+
+div.confirmBoxOuter:after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    position: absolute;
+
+    top: calc(100% - 21px);
+    left: calc(50% - 15px);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    border-radius: 3px;
+    z-index: 1;
+
+    background-color: #ededed;
+    border: 1px solid #9f9f9f;
+
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+
+}
+
+div.confirmBoxInner {
+   z-index: 2;
+   background-color: #ededed;
+   position: relative;
+   height: 46px;
+   line-height: 21px;
+}
+
+div.confirmBoxInner .confirmBoxCloser {
+	cursor: pointer;
+	color: #606060;
+	font-size: 6px;
+	margin: 2px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+div.confirmBoxInner .text {
+    color: #474647;
+    font-size: 14px;
+    margin: 13px 1px 13px 9px;
+    display: block;
+    float: left;
+}
+
+
+div.confirmBoxInner button{
+    color: #fff;
+    background-color: #fd7119;
+
+    font-size: 14px;
+
+    height: 25px;
+    margin: 8px 5px;
+    margin-left: 15px;
+    padding: 2px 19px 2px 14px;
+    width: 60px;
+
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    
+    float: right;
+	margin-top: 12px;
+	text-transform: capitalize;
+}
+/* EOF Hidden Element */
+body.reseller .leftPanel .leftPanelPremiumRibbon,
+body.reseller .contentPanelPremiumRibbon,
+body.reseller .linkPanel .premiumLinkRibbon {
+    display: none !important;
+}
+
+.bodyInsideNee.bodyInsideD1 .inlineEditorEditedElement:not(.dmRespCol, .dmFooter) {
+	cursor: move !important;
+}
+
+.bodyInsideNee.bodyInsideD1 .inlineEditorEditedElement.dmNowInlineEditing {
+	cursor: auto !important;
+}
+
+.bodyInsideNee.bodyInsideD1 .inlineEditorEditedElement.inlineEditorHeaderSelected {
+	cursor: default !important;
+}
+
+.bodyInsideNee.bodyInsideD1 .inlineEditorEditedElement.inlineEditorNavigationSelected {
+	cursor: default !important;
+}
+
+.dmRespCol.dmRespColMarkedForDrop {
+
+}
+
+.dmRespCol .dmExtraColumnPlaceHolder:hover {
+	width: 50px;	
+}
+
+.dmRespCol .dmExtraColumnPlaceHolder {
+	height: 100%;
+	width: 10px;
+	position: absolute; 
+	-webkit-transition: background-color .3s ease, width .3s ease;
+	-moz-transition: background-color .3s ease, width .3s ease;
+	-o-transition: background-color .3s ease, width .3s ease;
+	-ms-transition: background-color .3s ease, width .3s ease;
+	
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Arial !important;
+	color: #83888c;
+	font-weight: bold;
+	font-size: 15px !important;
+	background-color: #ececec;
+	outline: 1px dashed #bebdbd;
+	z-index: 9999999999;
+}
+
+.dmRespCol .dmExtraColumnPlaceHolder:hover:after {
+	content: "Drop Here";
+}
+
+.dmRespCol .dmExtraColumnPlaceHolderLeft {
+	left: 0px;
+}
+
+.dmRespCol .dmExtraColumnPlaceHolderRight {
+	right: 0px;
+}
+
+.dmDragToFooterSign {
+	width: 130px;
+	height: 26px;
+	line-height: 26px;
+	background-color: #fd711a;
+	position: absolute;
+	top: -26px;
+	left: calc(50% - 65px);
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+	font-family: Arial;
+	font-size: 11px;
+	z-index: 1000000002;
+}
+
+.dmHeaderOverlay {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+/* 	background: rgba(255,255,255,0.5); */
+	border-bottom: 1px solid #fd711a;
+	pointer-events: none;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.fHeader .dmHeaderOverlay{
+	background: rgba(253,113,26,0.02);
+}
+
+.dmHeaderLabelSign {
+	background-clip: padding-box;
+	background-color: #fd711a;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	cursor: pointer;
+	text-align: center;
+	pointer-events: all;
+	position: absolute;
+	top: 100%;
+	left: calc(50% - 65px);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 130px;
+	white-space: nowrap;
+	font-family: Arial;
+	font-size: 11px;
+	z-index: 2222222;
+	line-height: 26px;
+	height: 26px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.dmHeaderLabelSign .arrow {
+	display: inline-block;
+	margin-right: 5px;
+	float: right;
+	line-height: 26px;
+}
+.dmDragToFooterSign.dmDragToFooterSignEmptyFooter {
+}
+
+.dmDragToFooterSignedElement {
+	box-shadow: 0px 0px 0px 1px #fd711a;
+}
+
+.dmDragToFooterMinHeight {
+	min-height: 50px;
+}
+
+.dmDragToFooterSignedElementEmptyFooter {
+	box-shadow: 0px 0px 0px 1px #fd711a;
+}
+
+.dmDragToFooterSignAction {
+	cursor: pointer;
+}
+
+.dmDragToFooterOverlay {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(253,113,26,0.1);
+	border-top: 1px solid #fd711a;
+	pointer-events: none;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.dmInlineResizerHandle {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    z-index: 1000000100;
+    background: white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.6);
+}
+
+.dmInlineSpacerHandle {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    z-index: 1000000001;
+    background-repeat: no-repeat;
+    padding: 0;
+    background-position: 50%;
+    background: white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.6);
+}
+
+.dmInlineSpacerHandle.dmInlineSpacerHandleTop {
+    margin-top: -5px;
+}
+
+.dmInlineSpacerHandle.dmInlineSpacerHandleLeft {
+    margin-left: -5px;
+}
+
+.dmInlineSpacerHandle.disabled {
+	cursor:default !important;
+    opacity: 0;
+}
+
+.dmInlineResizerHandle.dmInlineResizerHandleTopLeft,
+.dmInlineResizerHandle.dmInlineResizerHandleBottomRight {
+	cursor: nwse-resize;
+    margin-top: 11px;
+    margin-left: 9px;
+/* 	cursor: pointer; */
+}
+
+.dmInlineResizerHandle.dmInlineResizerHandleTopRight,
+.dmInlineResizerHandle.dmInlineResizerHandleBottomLeft {
+/* 	cursor: ne-resize; */
+	cursor: pointer;
+}
+
+.dmInlineSpacerHandle.dmInlineSpacerHandleBottom {
+	
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.dmInlineSpacerHandle.dmInlineSpacerHandleRight {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.dmInlineSpacerHandle.dmInlineSpacerHandleLeft {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.dmInlineSpacerHandle.dmInlineSpacerHandleTop, .dmInlineSpacerHandle.dmInlineSpacerHandleBottom {
+    cursor:row-resize;
+}
+.dmInlineSpacerHandle.dmInlineSpacerHandleRight, .dmInlineSpacerHandle.dmInlineSpacerHandleLeft {
+    cursor:col-resize;
+}
+
+.upgradeOverlay {
+  cursor: default;
+  text-align: center;
+  position: absolute;
+  top: 30;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(190, 190, 190, 0.3);
+  color: white;
+  max-width: 425px;
+  z-index: 1;
+}
+
+.upgradeOverlay:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.upgradeOverlay:hover .upgradeWrapper {
+  display: inline-block;
+}
+
+.upgradeOverlay .upgradeWrapper {
+    cursor: pointer;
+    display: none;
+    vertical-align: middle;
+    height: 30px;
+    width: 91px;
+    border: 1px solid #a7a7a7;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-color: #fff;
+    -webkit-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.25), inset -1px 1px 1px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.25), inset -1px 1px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.25), inset -1px 1px 1px rgba(255, 255, 255, 0.2);
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.05)), color-stop(100%, rgba(255, 255, 255, 0.05)));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+}
+
+.upgradeOverlay .upgradeWrapper .txt {
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #0abb60;
+    font-weight: 600;
+}
+
+.upgradeOverlay .upgradeWrapper .image {
+    height: 20px;
+    width: 15px;
+    margin-top: 4px;
+}
+
+.upgradeOverlay .tip {
+  display: inline-block;
+  font-size: 11px;
+  width: 12px;
+  height: 12px;
+  background-color: #9a9a9a;
+  line-height: 12px;
+  color: white;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 400;
+}
+
+
+body.insideCustomBrandingPreview .DMSelectionElement {
+	display: none !important;
+}
+
+div.draggingCursor {
+  cursor: url(/editor/nee/images/common/cursorDragHand.cur), url(/editor/nee/images/common/cursorDragHand.png), pointer;
+}
+
+.blockedRight {
+	box-shadow: 5px 0 7px -4px red !important;
+}
+
+.blockedLeft {
+		box-shadow: -5px 0 7px -4px red !important;
+}
+.blockedRight.blockedLeft {
+		box-shadow: -5px 0 7px -4px red, 5px 0 7px -4px red !important;
+}
+
+body:not(.bodyInsideD1) .socialHubInnerDiv:empty {
+    text-align: center;
+    min-height: 50px;
+    background-color: #e4e4e4;
+	box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.4);
+	margin: 5px 0;
+    
+}
+body:not(.bodyInsideD1) .socialHubInnerDiv:empty:after {
+	content: 'Click to edit Social Icons';
+	margin-top: 13px;
+	display: inline-block;
+	font-weight: bold;
+	color: #777;
+	font-size: 19px;
+	text-shadow: 0px 1px 0px #FFF;
+}
+.ruleEditOverlay {
+    background-color: rgb(63, 63, 63);
+	opacity: 0.7;
+    position: absolute;    
+    z-index: 5000 !important;
+}
+#editRuleActions {
+    position: absolute;
+    color: white;
+    z-index: 100000000001;
+    text-align: right;
+    width: 172px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.doneEditRule {
+    height: 45px;
+    line-height: 45px;
+    width: 100px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #ff6f31;
+    box-shadow: 1px 1px 10px #242120;
+    text-align: center;
+}
+.cancelEditRule {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+    text-shadow: 1px 1px 1px #000000;
+}
+.hideShowActions {
+    font-family: "Source Sans Pro", sans-serif;
+    display: table;
+    position: absolute;
+    color: white;
+    z-index: 5000;
+    text-align: left;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hideShowActions.mobile {
+    font-size: 14px;
+}
+.hideShowActions.mobile .innerWrapper .hiddenElementBtn {
+    background: url('/editor/dudaone/images/pageEditor/hideUnhide_small.png') no-repeat 0 0;
+    height: 24px;
+    width: 26px;
+    margin: 0 6px -7px 0;
+}
+.hideShowActions.mobile .innerWrapper.hidden .hiddenElementBtn {
+    background-position: 0 -26px;
+}
+
+.hideShowActions .innerWrapper {
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.hideShowActions .innerWrapper.hidden {
+    border: 1px solid #676767;
+}
+.hideShowActions .innerWrapper:not(.hidden):hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.hideShowActions .innerWrapper .hideUnHide {
+    visibility: hidden;
+    text-shadow: 1px 1px 1px #000000;
+}
+.hideShowActions .innerWrapper.hidden .hideUnHide {
+    visibility: visible;
+}
+.hideShowActions .innerWrapper:hover .hideUnHide {
+    visibility: visible;
+}
+.hideShowActions .innerWrapper .hiddenElementBtn {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 6px -10px 0;
+    background: url('/editor/dudaone/images/pageEditor/hideUnhide.png') no-repeat 0 -36px;
+    width: 37px;
+    height: 32px;
+}
+.hideShowActions .innerWrapper.hidden .hiddenElementBtn {
+    background-position: 0 0;
+}
+
+.popupEditDone {
+	position: fixed;
+} 
+#smartPopupsOverlay {
+	background-color: rgb(63, 63, 63); 
+	opacity: 0.7; 
+	height: 100%; 
+	display: none; 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	z-index: 5000;
+}
+.dmSmartPopup {
+	width: 100%; 
+	height: auto; 
+	display: none; 
+	position: fixed; 
+	top: 250px; 
+	left: 0;
+	right: 0;  
+	z-index: 5001;  
+	outline: none;
+}
+.dmDudaOneEditRuleBody.dmBodyNoIscroll.iOSFixed .fixedPart {
+	z-index: 4999;
+}
+#smartModeTip {
+    z-index: 5001;
+    position: absolute;
+    width: 390px;
+    background: white;
+    font-family: "Source Sans Pro2", sans-serif;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 1px 1px 10px #000000;
+    -webkit-box-shadow: 1px 1px 10px #000000;
+    box-shadow: 1px 1px 10px #000000;
+}
+#smartModeTip .dm-icon-x2 {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 7px;
+    color: #5f5f5f;
+    font-size: 10px;
+}
+#smartModeTip .smartModeTipTitle {
+    background: #f2f2f2;
+    height: 70px;
+    line-height: 70px;
+    color: #246596;
+    font-size: 18px;
+    padding-left: 30px;
+}
+#smartModeTip .smartModeTipTitle .circle {
+    display: inline-block;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 11px;
+    margin-right: 10px;
+}
+#smartModeTip .smartModeTipTitle .circle .dm-icon-smart-site {
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#smartModeTip .smartModeTipTitle .text {
+    display: inline-block;
+    vertical-align: top;
+}
+#smartModeTip .smartModeTipBody {
+    padding: 20px 30px;
+    line-height: 1.5em;
+    font-size: 14px;
+    color:#323232;
+}
+#smartModeTip .smartModeTipBody .bullet {
+    color: #246596;
+    margin-right: 8px;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+}
+#smartModeTip .smartModeCheckBox {
+    margin-top: 20px;
+    font-size: 12px;
+}
+#smartModeTip .smartModeCheckBox input {
+    vertical-align: bottom;
+    position: relative;
+    top: -3px;
+    margin-right: 5px;
+}
+#smartModeTip .smartModeCheckBox .closePopup {
+    float: right;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #000000;
+}
+.DMInlineEditorNotEditableElement,
+.dmRowEditor {
+    letter-spacing: normal;
+}
+.dmHeaderResp:empty {height:100%;}
+
+.visibleInEditor{display:block !important}
+
+/* in editor, the default behavior of hidden element overlay (when user chooses to display hidden elements in the editor)
+   is to make the hidden element width:100%. override that for language pickers */
+.displayHidden-inner > div.multilingualWidget{
+	width:auto;
+	
+}
+
+/* make columns inside default multilingual row */
+body.editGrid #dm .dmRespRow.defaultMultilingualExtensionRow:not(.dmPlaceHolderRespRow) .grid-column.empty{
+  min-height:30px;
+}
+
+body.editGrid:not(.ui-disableEditGrid) #dm .dmRespRow.defaultMultilingualExtensionRow:not(.dmPlaceHolderRespRow) .grid-column.empty:before{
+	display:none;
+}
+
+body.editGrid:not(.ui-disableEditGrid) #dm .dmRespRow.defaultMultilingualExtensionRow:not(.dmPlaceHolderRespRow) .grid-column.empty:after{
+	display:none;
+}
+
+.dmDesktopBody #dm .dmInner  .hidden-unhide,.dmTabletBody  #dm .dmInner  .hidden-unhide,.dmMobileBody  #dm .dmInner  .hidden-unhide{
+	display:block !important;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://localhost/imobiliaria/formulario_adiciona_imovel.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="./Adiciona imovel_files/jquery.min.js"></script>
+    <script src="./Adiciona imovel_files/jquery.mask.min.js"></script>
+    <script src="./Adiciona imovel_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./Adiciona imovel_files/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="./Adiciona imovel_files/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"> </script>
+    <link rel="stylesheet" href="./Adiciona imovel_files/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./Adiciona imovel_files/animate.min.css">
+    <script type="text/javascript" src="./Adiciona imovel_files/script.js"></script>
+    <link rel="stylesheet" href="./Adiciona imovel_files/estilo.css">
+	<title>Adiciona imovel</title>
+    <style>
+      .card{ margin-top:10px}
+      a{color:black;}
+      a:hover{color:orange;}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+                             <p class="text-success text-center">Você está logado como edilson18martins@gmail.com. <a href="http://localhost/imobiliaria/logout.php">Deslogar</a></p>
+                <nav class="navbar navbar-dark bg-dark" style="width:100%">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/imobiliaria/formulario_adiciona_imovel.php">Cadastar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/imobiliaria/lista_imoveis.php">Listar</a>
+                </li>
+            </ul>
+        </nav>
+        <form action="http://localhost/imobiliaria/adiciona_imoveis.php" method="POST" enctype="multipart/form-data">
+            <div class="card text-white bg-secondary ">
+                <div class="card-header">
+                    <h4>Cadastro de Imoveis</h4>
+                </div>
+                
+ 
+ <div class="row">
+     <div class="form-group card-body col-md-9 ">
+         <label>Titulo</label>
+         <input name="titulo" class="form-control" type="text" value=""> 
+        </div>
+        
+                                              
+
+     <div class="form-group card-body col-md-3 ">
+         <label> Destaque</label>
+         <input name="destaque" type="checkbox" class="form-control">
+     </div>
+ </div>
+ <div class="form-group card-body row">
+     <div class="form-group card-body col-md-1 ">
+         <label for="dormitorio">Dormitorio:</label>
+         <input name="dormitorio" class="form-control" type="number" value="">
+
+     </div>
+     <div class="form-group card-body col-md-1 ">
+         <label for="suite">Suite:</label>
+         <input name="suite" class="form-control" type="number" value="">
+
+     </div>
+     <div class="form-group card-body col-md-1 ">
+         <label for="vaga">Vaga:</label>
+         <input name="vaga" class="form-control" type="number" value="">
+
+     </div>
+
+     <div class="form-group card-body col-md-1 ">
+         <label for="banheiro">Banheiro:</label>
+         <input name="banheiro" class="form-control" type="number" value="">
+
+     </div>
+     <div class="form-group card-body col-md-1 ">
+         <label>Area</label>
+         <input name="area" class="form-control" type="number" value="">
+     </div>
+     <div class="form-group card-body col-md-1 ">
+         <label>Condoninio</label>
+         <input name="condominio" class="form-control" type="text" value="">
+     </div>
+     <div class="form-group card-body col-md-2 ">
+         <label> valor </label>
+         <input name="preco" class="form-control" type="text" value="">
+     </div>
+          <div class="form-group card-body col-md-2 ">
+         <label for="Tipo De Imovel">Tipo De Imovel:</label>
+         <select class="form-control" name="tipo">
+             <option value="">Tipo De Imovel</option>
+                              <option value="Apartamento">Apartamento</option>
+                              <option value="Casa">Casa</option>
+                              <option value="Sobrado">Sobrado</option>
+                              <option value="Terreno">Terreno</option>
+                      </select>
+     </div>
+          <div class="form-group card-body col-md-2 ">
+         <label for="Transação">Transação:</label>
+         <select class="form-control" name="transacao">
+             <option value="">Transação</option>
+                      <option value="Venda">Venda</option>
+                      <option value="Aluga">Aluga</option>
+                  </select>
+     </div>
+ </div>
+ <div class="row">
+     <div class="form-group card-body col-md-8 ">
+         <label>Descricao</label><br>
+         <textarea name="descricao" class="form-control" rows="8"></textarea>
+     </div>
+
+     <div class="form-group card-body col-md-4 ">
+         <label>Fotos</label>
+         <input name="arquivo[]" class="form-control" type="FILE" multiple="">
+     </div>
+ </div>
+ </div>
+ <div class="card  bg-success">
+     <div class="card-header">
+         <h4>Endereço</h4>
+     </div>
+     <div class="row">
+         <div class="form-group card-body col-md-1 ">
+             <label> Numero </label>
+             <input name="numero" class="form-control" type="text" value="">
+         </div>
+                  <div class="form-group card-body col-md-2 ">
+             <label> Logradouros tipo </label>
+             <select class="form-control" name="logradouroTipo">
+                 <option>logradouros</option>
+                                      <option value="AV">AV</option>
+                                      <option value="Rua">Rua</option>
+                              </select>
+         </div>
+         <div class="form-group card-body col-md-5 ">
+             <label>Logradouros nome </label>
+             <input name="logradouroNome" class="form-control" type="text" value=" ">
+         </div>
+         <div class="form-group card-body col-md-4 ">
+             <label>Bairro </label>
+             <input name="bairro" class="form-control" type="text" value="">
+         </div>
+         <div class="form-group card-body col-md-3 ">
+             <label>Cep </label>
+             <input name="cep" class="form-control" type="text" value="">
+         </div>
+         <div class="form-group card-body col-md-3 ">
+             <label>Cidade </label>
+             <input name="cidade" class="form-control" type="text" value="">
+         </div>
+         <div class="form-group card-body col-md-2 ">
+             <label>Latitude </label>
+             <input name="latitude" class="form-control" type="text" value="">
+         </div>
+         <div class="form-group card-body col-md-2 ">
+             <label>Longitude</label>
+             <input name="longitude" class="form-control" type="text" value="">
+         </div>
+     </div>
+ </div>
+ <div class="card text-white bg-info">
+     <div class="card-header">
+         <h4>Proprietário</h4>
+     </div>
+     <div class="row">
+         <div class="form-group card-body col-md-3 ">
+             <label>Nome </label>
+             <input name="nome" class="form-control" type="text" value="">
+         </div>
+
+         <div class="form-group card-body col-md-3 ">
+             <label>Email </label>
+             <input name="email" class="form-control" type="text" value="">
+         </div>
+         <div class="form-group card-body col-md-3 ">
+             <label>Tell </label>
+             <input name="tell" class="form-control" type="text" value="">
+         </div>
+     </div>
+ </div>
+
+
+           <div class="form-group card-body col-md-3">
+              <button type="submit" class="btn btn-primary">Adiciona</button>
+          </div>
+        </form>
+    </div>
+
+
+</body></html>

@@ -1,0 +1,131 @@
+.btnB>a,
+a:link {
+    text-decoration: none
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Lato, Trebuchet MS, Arial, sans-serif
+}
+#map {
+    height: 555px;
+    border: 1px solid #708090
+}
+
+.interfaceMapa {
+    width: 100%
+}
+
+.interfaceMapa>.rowMapa {
+    overflow: hidden
+}
+
+.interfaceMapa>.rowMapa>.rowMapaBody {
+    height: 555px;
+    width: 100%
+}
+
+.infowincontent {
+    border-radius: 20px;
+    height: 200px;
+    position: relative;
+    top: -24px;
+    text-align: center;
+}
+
+.gm-style-iw {
+    min-width: 321px
+}
+
+.gm-style-iw-c,
+.gm-style-iw-d {
+    overflow: none!important;
+    max-width: 340px!important
+}
+
+.infowincontent>span {
+    position: relative;
+    top: 30px;
+    z-index: 10;
+    font-size: 15px;
+    color: #f24816;
+    font-family: Fira Sans Condensed, sans-serif
+}
+
+.carousel-inner {
+    margin-right: 0!important
+}
+
+.carousel>.carousel-inner,
+.carousel>.carousel-inner>.carousel-item ,
+.carousel>.carousel-inner>.carousel-item>img {
+    height: 180px!important;
+    width: 100%!important
+}
+
+.btnB {
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    border-radius: 10px;
+    z-index: 20
+}
+
+.infoB {
+    border-color: #282b2f;
+    right: 5px
+}
+
+.infoB>a {
+    color: #282b2f;
+    padding: 5px 10px
+}
+
+.infoB:hover {
+    background: #282b2f
+}
+
+.infoB:hover>a {
+    color: #fff
+}
+
+.default {
+    border-color: #708090;
+    right: 60px
+}
+
+.default>a {
+    color: #708090
+}
+
+.default:hover {
+    background: #708090
+}
+
+.default:hover>a {
+    color: #fff
+}
+
+.infowincontent>.info {
+    font-size: 12px;
+    width: 310px
+}
+
+.numero_foto {
+    z-index: 100;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: 900;
+    color: red
+}
+
+i {
+    font-weight: 500
+}

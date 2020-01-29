@@ -1,0 +1,2 @@
+.navbar-inverse{margin-bottom:0}header{background:#135b75;color:#fff;width:100%}.navbar{font-size:20px;padding:0;z-index:100}.collapse>.navbar-nav>.nav-item>.nav-link{color:orange}.collapse>.navbar-nav>.nav-item>.nav-link:hover{color:#fff;background:#00405d}.collapse>.navbar-nav>.nav-item>.nav-link:hover>.nav-item{color:#fff}@media only screen and (min-width:990px){.collapse>.navbar-nav>.nav-item>.nav-link{padding:20px}}
+#interface > header > nav > a{color: white}
